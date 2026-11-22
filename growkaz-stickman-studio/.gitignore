@@ -1,0 +1,5 @@
+node_modules/
+projects/*/build/
+projects/*/out/
+projects/*/input/
+projects/*/audio/

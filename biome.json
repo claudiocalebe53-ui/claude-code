@@ -13,7 +13,8 @@
       "!!**/.claude/workflows",
       "!!**/*.workflow.mjs",
       "!!**/video-studio",
-      "!!plugins"
+      "!!plugins",
+      "!!growkaz-stickman-studio"
     ]
   },
   "formatter": {

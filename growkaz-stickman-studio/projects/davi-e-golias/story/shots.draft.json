@@ -1,0 +1,1967 @@
+{
+ "title": "Davi e Golias",
+ "duration": 482.7,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 1.85,
+   "line": "Um vale silencioso.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 1.85,
+   "end": 4.33,
+   "line": "De um lado, o exército de Israel.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 4.33,
+   "end": 7.61,
+   "line": "Do outro, os filisteus. E no meio...",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 7.61,
+   "end": 10.51,
+   "line": "um homem de quase três metros de altura.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 10.51,
+   "end": 14.45,
+   "line": "Durante quarenta dias, ninguém teve coragem de enfrentá-lo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 14.45,
+   "end": 19.87,
+   "line": "Até que apareceu um adolescente, com uma funda na mão e cinco pedras no bolso.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 19.87,
+   "end": 22.89,
+   "line": "Essa é a história de Davi e Golias.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 22.89,
+   "end": 25.77,
+   "line": "E ela é muito mais do que uma história de criança.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 25.77,
+   "end": 28.55,
+   "line": "Ela fala sobre os gigantes que você enfrenta hoje.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 28.55,
+   "end": 34.31,
+   "line": "Estamos por volta do ano mil antes de Cristo. Israel tem um rei: Saul.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 34.31,
+   "end": 38.81,
+   "line": "Alto, forte, escolhido para liderar o povo nas batalhas.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 38.81,
+   "end": 41.47,
+   "line": "Mas Saul já não anda com Deus como antes.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 41.47,
+   "end": 45.87,
+   "line": "O profeta Samuel já tinha ungido, em segredo, um novo rei:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 45.87,
+   "end": 49.67,
+   "line": "um jovem pastor de Belém, o filho mais novo de Jessé.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 49.67,
+   "end": 51.81,
+   "line": "O nome dele era Davi.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 51.81,
+   "end": 57.73,
+   "line": "Quando Samuel chegou à casa de Jessé, olhou para o filho mais velho, alto e forte, e pensou:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 57.73,
+   "end": 60.83,
+   "line": "\"Com certeza é este.\" Mas Deus disse:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 60.83,
+   "end": 63.79,
+   "line": "\"Não olhe para a aparência nem para a altura.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 63.79,
+   "end": 68.27,
+   "line": "O homem vê o que está diante dos olhos, mas o Senhor vê o coração.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 68.27,
+   "end": 70.21,
+   "line": "Um por um, os filhos passaram.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 70.21,
+   "end": 72.03,
+   "line": "Nenhum era o escolhido.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 72.03,
+   "end": 75.49,
+   "line": "Faltava o caçula, que estava no campo, cuidando das ovelhas.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 75.49,
+   "end": 77.67,
+   "line": "Ninguém tinha lembrado de chamá-lo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 77.67,
+   "end": 79.57,
+   "line": "Foi ele que Deus escolheu.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 79.57,
+   "end": 83.31,
+   "line": "Guarde essa frase, porque ela é a chave de toda esta história:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 83.31,
+   "end": 84.77,
+   "line": "o homem vê a aparência.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 84.77,
+   "end": 87.17,
+   "line": "Deus vê o coração.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 87.17,
+   "end": 89.59,
+   "line": "Os filisteus eram o maior inimigo de Israel.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 89.59,
+   "end": 93.65,
+   "line": "Tinham armas de ferro e cidades fortificadas no litoral.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 93.65,
+   "end": 96.83,
+   "line": "Agora eles avançaram até o Vale de Elá.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 96.83,
+   "end": 101.29,
+   "line": "Os dois exércitos se posicionaram em montes opostos, com o vale no meio.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 101.29,
+   "end": 103.33,
+   "line": "Ninguém queria descer primeiro.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 103.33,
+   "end": 105.53,
+   "line": "Quem descesse ficaria exposto.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 105.53,
+   "end": 108.97,
+   "line": "Então, do acampamento filisteu, saiu um campeão.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 108.97,
+   "end": 110.85,
+   "line": "Golias, da cidade de Gate.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 110.85,
+   "end": 114.73,
+   "line": "A Bíblia diz que ele tinha seis côvados e um palmo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 114.73,
+   "end": 116.45,
+   "line": "Quase três metros.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 116.45,
+   "end": 122.53,
+   "line": "Usava um capacete de bronze e uma armadura de escamas que pesava cerca de cinquenta e sete quilos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 122.53,
+   "end": 125.97,
+   "line": "Só a ponta de ferro da sua lança pesava uns sete quilos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 125.97,
+   "end": 130.17,
+   "line": "À frente dele, um escudeiro carregava o escudo. E ele gritou:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 130.17,
+   "end": 133.69,
+   "line": "\"Escolham um homem e mandem ele descer até mim.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 133.69,
+   "end": 135.97,
+   "line": "Se ele me vencer, seremos seus servos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 135.97,
+   "end": 140.75,
+   "line": "Mas se eu vencer, vocês serão nossos servos.\" E completou:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 140.75,
+   "end": 143.01,
+   "line": "\"Hoje eu desafio as tropas de Israel!\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 143.01,
+   "end": 146.01,
+   "line": "Saul e todo o Israel ouviram.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 146.01,
+   "end": 149.99,
+   "line": "E a Bíblia diz que ficaram espantados e com muito medo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 149.99,
+   "end": 153.11,
+   "line": "Golias repetia o desafio de manhã e à tarde.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 153.11,
+   "end": 154.83,
+   "line": "Por quarenta dias.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 154.83,
+   "end": 158.75,
+   "line": "Enquanto isso, em Belém, Davi cuidava das ovelhas do pai.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 158.75,
+   "end": 161.31,
+   "line": "Seus três irmãos mais velhos estavam no exército.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 161.31,
+   "end": 163.53,
+   "line": "Um dia, Jessé disse:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 163.53,
+   "end": 166.93,
+   "line": "\"Leve este grão tostado e estes dez pães para os seus irmãos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 166.93,
+   "end": 170.89,
+   "line": "E estes dez queijos para o comandante. Veja como eles estão.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 170.89,
+   "end": 176.07,
+   "line": "Davi chegou ao acampamento bem na hora em que o exército saía gritando para a batalha.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 176.07,
+   "end": 177.83,
+   "line": "Ele correu até os irmãos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 177.83,
+   "end": 181.69,
+   "line": "E nesse momento, Golias subiu e repetiu o desafio.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 181.69,
+   "end": 184.85,
+   "line": "Davi viu os soldados de Israel fugirem de medo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 184.85,
+   "end": 186.81,
+   "line": "Ele ouviu os homens comentando:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 186.81,
+   "end": 190.11,
+   "line": "o rei daria grandes riquezas a quem vencesse aquele gigante,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 190.11,
+   "end": 196.41,
+   "line": "daria a própria filha em casamento e livraria a família dele dos impostos. E Davi perguntou:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 196.41,
+   "end": 200.73,
+   "line": "\"Quem é esse filisteu, para desafiar os exércitos do Deus vivo?\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 200.73,
+   "end": 205.37,
+   "line": "O irmão mais velho, Eliabe, ficou furioso. \"Por que você veio aqui?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 205.37,
+   "end": 208.35,
+   "line": "Com quem deixou aquelas poucas ovelhas no deserto?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 208.35,
+   "end": 209.87,
+   "line": "Eu conheço o seu orgulho.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 209.87,
+   "end": 214.31,
+   "line": "Você só veio ver a batalha.\" Davi respondeu: \"O que foi que eu fiz agora?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 214.31,
+   "end": 216.41,
+   "line": "Foi só uma pergunta.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 216.41,
+   "end": 221.09,
+   "line": "Às vezes, a primeira voz que tenta te parar vem de dentro de casa.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 221.09,
+   "end": 222.99,
+   "line": "As palavras de Davi chegaram ao rei.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 222.99,
+   "end": 225.97,
+   "line": "Saul mandou chamá-lo. E Davi disse:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 225.97,
+   "end": 228.61,
+   "line": "\"Ninguém desanime por causa desse filisteu.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 228.61,
+   "end": 230.45,
+   "line": "O seu servo vai lutar com ele.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 230.45,
+   "end": 234.61,
+   "line": "Saul olhou para aquele jovem e disse: \"Você não pode.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 234.61,
+   "end": 239.91,
+   "line": "Você é só um rapaz, e ele é guerreiro desde a juventude.\" Mas Davi contou:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 239.91,
+   "end": 244.47,
+   "line": "\"Quando eu cuidava das ovelhas, e vinha um leão ou um urso e levava um cordeiro,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 244.47,
+   "end": 248.75,
+   "line": "eu ia atrás, feria o animal e tirava o cordeiro da boca dele.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 248.75,
+   "end": 251.39,
+   "line": "O seu servo já matou leões e ursos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s077",
+   "start": 251.39,
+   "end": 253.67,
+   "line": "Esse filisteu será como um deles.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s078",
+   "start": 253.67,
+   "end": 259.35,
+   "line": "O Senhor que me livrou das garras do leão e do urso vai me livrar das mãos deste filisteu.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s079",
+   "start": 259.35,
+   "end": 262.11,
+   "line": "Davi não estava confiando na própria força.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s080",
+   "start": 262.11,
+   "end": 264.59,
+   "line": "Ele estava se lembrando do que Deus já tinha feito.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s081",
+   "start": 264.59,
+   "end": 268.11,
+   "line": "Saul então vestiu Davi com a própria armadura.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s082",
+   "start": 268.11,
+   "end": 274.35,
+   "line": "Capacete de bronze, couraça, espada. Davi tentou andar... e não conseguiu.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s083",
+   "start": 274.35,
+   "end": 278.39,
+   "line": "\"Não posso ir com isto. Não estou acostumado.\" E tirou tudo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s084",
+   "start": 278.39,
+   "end": 281.03,
+   "line": "Davi não precisava ser uma cópia de Saul.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s085",
+   "start": 281.03,
+   "end": 285.01,
+   "line": "Deus ia usar exatamente aquilo que Davi já sabia fazer.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s086",
+   "start": 285.01,
+   "end": 289.69,
+   "line": "Ele pegou o seu cajado, desceu até o riacho e escolheu cinco pedras lisas.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s087",
+   "start": 289.69,
+   "end": 292.21,
+   "line": "Guardou no seu alforje de pastor.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s088",
+   "start": 292.21,
+   "end": 293.85,
+   "line": "Na mão, a funda.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s089",
+   "start": 293.85,
+   "end": 297.41,
+   "line": "E caminhou em direção ao gigante. Pode parecer pouco.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s090",
+   "start": 297.41,
+   "end": 299.43,
+   "line": "Mas a funda não era um brinquedo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s091",
+   "start": 299.43,
+   "end": 302.39,
+   "line": "Era uma arma usada nos exércitos antigos.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s092",
+   "start": 302.39,
+   "end": 308.41,
+   "line": "O livro de Juízes fala de soldados que conseguiam acertar uma pedra num fio de cabelo sem errar.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s093",
+   "start": 308.41,
+   "end": 313.05,
+   "line": "Uma pedra lançada por uma funda podia voar a mais de cem quilômetros por hora.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s094",
+   "start": 313.05,
+   "end": 316.23,
+   "line": "E Davi tinha passado anos sozinho no campo,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s095",
+   "start": 316.23,
+   "end": 320.05,
+   "line": "praticando, dia após dia, para proteger as ovelhas.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s096",
+   "start": 320.05,
+   "end": 323.15,
+   "line": "Ninguém via aquele treino. Mas Deus via.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s097",
+   "start": 323.15,
+   "end": 325.61,
+   "line": "Golias olhou e desprezou Davi.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s098",
+   "start": 325.61,
+   "end": 328.01,
+   "line": "Um rapaz ruivo, de boa aparência.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s099",
+   "start": 328.01,
+   "end": 331.57,
+   "line": "\"Por acaso eu sou um cão, para você vir contra mim com pedaços de pau?\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s100",
+   "start": 331.57,
+   "end": 334.45,
+   "line": "E amaldiçoou Davi pelos seus deuses.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s101",
+   "start": 334.45,
+   "end": 339.03,
+   "line": "\"Venha, e eu darei a sua carne às aves do céu e aos animais do campo.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s102",
+   "start": 339.03,
+   "end": 343.43,
+   "line": "Então Davi respondeu com uma das frases mais fortes de toda a Bíblia:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s103",
+   "start": 343.43,
+   "end": 347.07,
+   "line": "\"Você vem contra mim com espada, lança e escudo.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s104",
+   "start": 347.07,
+   "end": 350.57,
+   "line": "Mas eu vou contra você em nome do Senhor dos Exércitos,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s105",
+   "start": 350.57,
+   "end": 354.41,
+   "line": "o Deus dos exércitos de Israel, a quem você desafiou.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s106",
+   "start": 354.41,
+   "end": 359.21,
+   "line": "E toda esta multidão vai saber que o Senhor não salva com espada nem com lança.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s107",
+   "start": 359.21,
+   "end": 361.63,
+   "line": "Porque a batalha é do Senhor.\"",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s108",
+   "start": 361.63,
+   "end": 367.55,
+   "line": "Golias começou a avançar. E Davi... correu. Não para longe. Na direção dele.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s109",
+   "start": 367.55,
+   "end": 372.55,
+   "line": "Pôs a mão no alforje, tirou uma pedra, girou a funda... e atirou.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s110",
+   "start": 372.55,
+   "end": 375.67,
+   "line": "A pedra acertou a testa do filisteu e se cravou nela.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s111",
+   "start": 375.67,
+   "end": 378.37,
+   "line": "E o gigante caiu com o rosto em terra.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s112",
+   "start": 378.37,
+   "end": 382.51,
+   "line": "Davi correu, pegou a espada do próprio Golias e acabou com ele.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s113",
+   "start": 382.51,
+   "end": 386.19,
+   "line": "Quando os filisteus viram que o seu campeão estava morto, fugiram.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s114",
+   "start": 386.19,
+   "end": 392.31,
+   "line": "E o exército de Israel, que tinha passado quarenta dias com medo, se levantou e foi atrás deles.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s115",
+   "start": 392.31,
+   "end": 395.53,
+   "line": "O que essa história ensina para nós hoje? Primeiro:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s116",
+   "start": 395.53,
+   "end": 397.59,
+   "line": "o gigante não tinha mudado.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s117",
+   "start": 397.59,
+   "end": 400.35,
+   "line": "O que mudou foi para onde Davi estava olhando.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s118",
+   "start": 400.35,
+   "end": 403.05,
+   "line": "O exército olhava para o tamanho de Golias.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s119",
+   "start": 403.05,
+   "end": 406.61,
+   "line": "Davi olhava para o tamanho de Deus. Segundo:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s120",
+   "start": 406.61,
+   "end": 409.23,
+   "line": "Deus prepara a gente no lugar escondido.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s121",
+   "start": 409.23,
+   "end": 415.47,
+   "line": "Os leões e os ursos no campo, longe de qualquer plateia, foram o treino para o vale. Terceiro:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s122",
+   "start": 415.47,
+   "end": 418.75,
+   "line": "você não precisa vestir a armadura de outra pessoa.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s123",
+   "start": 418.75,
+   "end": 423.69,
+   "line": "Deus usa quem você é, e o que Ele já colocou na sua mão. E por último:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s124",
+   "start": 423.69,
+   "end": 426.73,
+   "line": "a vitória de um encorajou um povo inteiro.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s125",
+   "start": 426.73,
+   "end": 431.89,
+   "line": "Quando você enfrenta o seu gigante, outras pessoas ganham coragem para enfrentar os delas.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s126",
+   "start": 431.89,
+   "end": 438.47,
+   "line": "Talvez o seu gigante tenha outro nome. Medo. Doença. Dívida. Ansiedade. Um vício.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s127",
+   "start": 438.47,
+   "end": 441.27,
+   "line": "Talvez ele esteja gritando contra você há quarenta dias.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s128",
+   "start": 441.27,
+   "end": 443.93,
+   "line": "Mas lembre-se das palavras de Davi:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s129",
+   "start": 443.93,
+   "end": 446.17,
+   "line": "a batalha é do Senhor.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s130",
+   "start": 446.17,
+   "end": 447.79,
+   "line": "Você não precisa ser o maior.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s131",
+   "start": 447.79,
+   "end": 449.83,
+   "line": "Não precisa ter a melhor armadura.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s132",
+   "start": 449.83,
+   "end": 455.01,
+   "line": "Precisa apenas confiar no mesmo Deus que estava com aquele jovem pastor no Vale de Elá.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s133",
+   "start": 455.01,
+   "end": 456.75,
+   "line": "O Deus que vê o coração.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s134",
+   "start": 456.75,
+   "end": 460.25,
+   "line": "O Deus que te preparou em lugares onde ninguém estava olhando.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s135",
+   "start": 460.25,
+   "end": 462.57,
+   "line": "Então hoje, pegue as suas pedras.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s136",
+   "start": 462.57,
+   "end": 465.15,
+   "line": "Pegue aquilo que Deus já colocou na sua mão.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s137",
+   "start": 465.15,
+   "end": 470.05,
+   "line": "E caminhe em direção ao seu gigante. Não para longe dele. Na direção dele.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s138",
+   "start": 470.05,
+   "end": 472.49,
+   "line": "Porque a batalha... é do Senhor.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s139",
+   "start": 472.49,
+   "end": 477.55,
+   "line": "Se esta mensagem falou com você, compartilhe com alguém que está enfrentando um gigante agora.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s140",
+   "start": 477.55,
+   "end": 482.7,
+   "line": "E se inscreva no canal para acompanhar as próximas histórias da Bíblia.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": []
+}
