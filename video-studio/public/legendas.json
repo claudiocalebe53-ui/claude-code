@@ -1,0 +1,8 @@
+[
+  { "text": "Olá!", "startMs": 0, "endMs": 1000, "timestampMs": 500, "confidence": 1 },
+  { "text": " Isto", "startMs": 1000, "endMs": 1600, "timestampMs": 1300, "confidence": 1 },
+  { "text": " é", "startMs": 1600, "endMs": 2000, "timestampMs": 1800, "confidence": 1 },
+  { "text": " Three.js", "startMs": 2000, "endMs": 3000, "timestampMs": 2500, "confidence": 1 },
+  { "text": " com", "startMs": 3000, "endMs": 3500, "timestampMs": 3250, "confidence": 1 },
+  { "text": " Remotion", "startMs": 3500, "endMs": 5000, "timestampMs": 4250, "confidence": 1 }
+]
