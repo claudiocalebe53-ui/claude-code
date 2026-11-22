@@ -87,6 +87,22 @@ SONS = {
 EXT_AUDIO = (".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac")
 
 
+def achar_narracao(nome: str) -> Path | None:
+    """assets/narracao/<nome>.(wav|mp3|...) — ex.: 00_gancho, vinheta_facil, p1_pergunta."""
+    for ext in EXT_AUDIO:
+        p = ASSETS / "narracao" / (nome + ext)
+        if p.exists():
+            return p
+    return None
+
+
+@lru_cache(maxsize=64)
+def duracao_audio(p: Path) -> float:
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                          "-of", "csv=p=0", str(p)], capture_output=True, text=True, check=True)
+    return float(out.stdout.strip())
+
+
 # ---------------------------------------------------------------------------
 # Utilidades
 # ---------------------------------------------------------------------------
@@ -622,17 +638,18 @@ def _cache_layer(chave, fabrica):
     return _LAYERS[chave]
 
 
-def tela_vinheta(t, nivel, tg):
+def tela_vinheta(t, nivel, tg, dur=T_VINHETA):
     nv = NIVEIS[nivel]
     canvas = raios(nv["c1"], nv["c2"], tg * 70, n=16, centro=(W / 2, H / 2))
     canvas.alpha_composite(meio_tom())
     canvas.alpha_composite(vinheta_escura())
     card = _cache_layer(("card", nivel), lambda: _cartao_nivel(nivel))
-    if t < 0.8:
+    saida = dur - 0.2
+    if t < saida:
         z = ease_out_back(t / 0.28, 2.0)
         op = 1.0
     else:
-        k = (t - 0.8) / 0.2
+        k = (t - saida) / 0.2
         z = 1 + 0.5 * ease_in_cubic(k)
         op = 1 - k
     tremor = 6 * math.sin(t * 90) * max(0, 1 - t / 0.35)
@@ -823,22 +840,34 @@ def montar_timeline(dados, teste=False):
     segs = []
     t = 0.0
 
-    def add(tipo, dur, **kw):
+    def add(tipo, dur, narr=(), **kw):
+        """narr: lista de (arquivo, atraso dentro do segmento)."""
         nonlocal t
-        segs.append({"tipo": tipo, "ini": t, "dur": dur, **kw})
+        narr = [(p, t + off) for p, off in narr if p]
+        segs.append({"tipo": tipo, "ini": t, "dur": dur, "narr": narr, **kw})
         t += dur
 
-    add("gancho", T_GANCHO)
+    def dur(p):
+        return duracao_audio(p) if p else 0.0
+
+    n = achar_narracao("00_gancho")
+    add("gancho", max(T_GANCHO, dur(n) + 0.25), [(n, 0.0)])
     nivel_atual = None
     for i, q in enumerate(perguntas):
         nv = q.get("nivel", "facil")
         if nv not in NIVEIS:
             raise ValueError(f"nível inválido na pergunta {i + 1}: {nv}")
         if nv != nivel_atual:
-            add("vinheta", T_VINHETA, nivel=nv)
+            n = achar_narracao(f"vinheta_{nv}")
+            add("vinheta", max(T_VINHETA, dur(n) + 0.15), [(n, 0.03)], nivel=nv)
             nivel_atual = nv
-        add("pergunta", T_PERGUNTA, idx=i)
-    add("final", T_FINAL)
+        np_ = achar_narracao(f"p{i + 1}_pergunta")
+        nr = achar_narracao(f"p{i + 1}_resposta")
+        t_rev = T_TEXTO + T_TIMER
+        add("pergunta", t_rev + max(T_REVELA, dur(nr) + 0.45),
+            [(np_, 0.15), (nr, t_rev + 0.15)], idx=i)
+    n = achar_narracao("99_final")
+    add("final", max(T_FINAL, dur(n) + 0.5), [(n, 0.15)])
     return segs, t
 
 
@@ -855,6 +884,8 @@ def eventos_audio(segs):
             ev.append(("ding", s["ini"] + T_TEXTO + T_TIMER, None, 1.0))
         elif s["tipo"] == "final":
             ev.append(("pop", s["ini"] + 0.02, None, 0.9))
+        for p, ini in s.get("narr", []):
+            ev.append((p, ini, None, 1.0))
     return ev
 
 
@@ -883,7 +914,7 @@ def render_tempo(tg, dados, segs) -> Image.Image:
     if tipo == "gancho":
         return tela_gancho(t, dados, tg)
     if tipo == "vinheta":
-        return tela_vinheta(t, seg["nivel"], tg)
+        return tela_vinheta(t, seg["nivel"], tg, seg["dur"])
     if tipo == "pergunta":
         return tela_pergunta(t, dados["perguntas"][seg["idx"]], seg["idx"], tg)
     return tela_final(t, dados, tg)
@@ -906,7 +937,8 @@ def achar_som(chave):
 def mixar_audio(video_mudo: Path, saida: Path, segs, total):
     disponiveis = {k: achar_som(k) for k in SONS}
     faltando = [SONS[k] for k, v in disponiveis.items() if v is None]
-    if all(v is None for v in disponiveis.values()):
+    tem_narr = any(isinstance(e[0], Path) for e in eventos_audio(segs))
+    if all(v is None for v in disponiveis.values()) and not tem_narr:
         shutil.move(str(video_mudo), saida)
         return faltando
 
@@ -915,7 +947,7 @@ def mixar_audio(video_mudo: Path, saida: Path, segs, total):
     n_in = 1
     fmt = "aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo"
     for k, (som, ini, dur, vol) in enumerate(eventos_audio(segs)):
-        p = disponiveis.get(som)
+        p = som if isinstance(som, Path) else disponiveis.get(som)
         if p is None:
             continue
         if dur:
@@ -930,12 +962,12 @@ def mixar_audio(video_mudo: Path, saida: Path, segs, total):
         n_in += 1
     if disponiveis.get("musica"):
         cmd += ["-stream_loop", "-1", "-i", str(disponiveis["musica"])]
-        filtros.append(f"[{n_in}:a]{fmt},atrim=0:{total},volume=0.12,"
+        filtros.append(f"[{n_in}:a]{fmt},atrim=0:{total},volume={0.07 if tem_narr else 0.12},"
                        f"afade=t=in:d=0.5,afade=t=out:st={total - 1.5}:d=1.5[mus]")
         rotulos.append("[mus]")
         n_in += 1
     filtros.append(f"{''.join(rotulos)}amix=inputs={len(rotulos)}:normalize=0:duration=longest,"
-                   f"alimiter=limit=0.95,atrim=0:{total}[aout]")
+                   f"alimiter=limit=0.95,apad,atrim=0:{total}[aout]")
     cmd += ["-filter_complex", ";".join(filtros), "-map", "0:v", "-map", "[aout]",
             "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(saida)]
     subprocess.run(cmd, check=True)
@@ -972,11 +1004,11 @@ def renderizar(dados, saida: Path, fps=60, teste=False, procs=None):
     print(f"\n  vídeo codificado em {time.time() - t0:.0f}s")
     faltando = mixar_audio(mudo, saida, segs, total)
     if faltando:
-        todos = len(faltando) == len(SONS)
+        todos = len(faltando) == len(SONS) and not any(s["narr"] for s in segs)
         print("\n⚠️  AVISO: arquivos de som não encontrados em assets/sons/: "
               + ", ".join(f"{f}.(mp3|wav|ogg)" for f in faltando))
         print("   " + ("O vídeo foi gerado SEM SOM." if todos else
-                      "O vídeo foi gerado sem esses sons (os demais foram mixados)."))
+                      "O vídeo foi gerado sem esses sons (narração e demais sons foram mixados)."))
     print(f"Pronto: {saida}")
 
 

@@ -15,3 +15,7 @@ python gerar.py            # vídeo completo -> saida/quiz.mp4
 - `assets/sons/`: `tique-taque`, `ding`, `whoosh`, `pop`, `musica` (.mp3/.wav/.ogg).
   Sons ausentes são pulados com aviso; sem nenhum, o vídeo sai mudo.
 - Fonte: Lilita One (OFL) em `assets/fonts/`.
+- `assets/narracao/`: narração opcional, um arquivo por fala: `00_gancho`, `vinheta_facil`,
+  `vinheta_medio`, `vinheta_dificil`, `p1_pergunta`, `p1_resposta` … `p5_resposta`, `99_final`.
+  A pergunta é lida no início do cronômetro e a resposta entra junto com a revelação.
+  Telas se alongam automaticamente se a fala for mais longa que o tempo padrão.
