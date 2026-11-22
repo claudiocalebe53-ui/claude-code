@@ -12,7 +12,8 @@
       "!!**/dist-stable",
       "!!**/.claude/workflows",
       "!!**/*.workflow.mjs",
-      "!!**/video-studio"
+      "!!**/video-studio",
+      "!!plugins"
     ]
   },
   "formatter": {

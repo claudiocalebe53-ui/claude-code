@@ -1,0 +1,11 @@
+{
+  "name": "local-video-plugins",
+  "owner": { "name": "local" },
+  "plugins": [
+    {
+      "name": "growkaz-stickman",
+      "source": "./growkaz-stickman",
+      "description": "Vídeos animados de stick figures (2D + 3D com Three.js) a partir de uma narração."
+    }
+  ]
+}
