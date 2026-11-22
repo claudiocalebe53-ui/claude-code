@@ -872,18 +872,25 @@ def montar_timeline(dados, teste=False):
 
 
 def eventos_audio(segs):
+    """(som, início, duração de loop ou None, volume). som = chave de SONS ou Path da narração."""
     ev = []
     for s in segs:
         if s["tipo"] == "gancho":
-            ev.append(("pop", s["ini"] + 0.02, None, 0.9))
+            ev.append(("pop", s["ini"] + 0.02, None, 0.55))
+            ev.append(("whoosh", s["ini"], None, 0.45))
         elif s["tipo"] == "vinheta":
-            ev.append(("whoosh", s["ini"], None, 1.0))
+            ev.append(("whoosh", s["ini"], None, 0.65))
+            ev.append(("pop", s["ini"] + 0.06, None, 0.35))
         elif s["tipo"] == "pergunta":
-            ev.append(("pop", s["ini"] + 0.05, None, 0.7))
-            ev.append(("tique", s["ini"] + T_TEXTO, T_TIMER, 0.9))
-            ev.append(("ding", s["ini"] + T_TEXTO + T_TIMER, None, 1.0))
+            ev.append(("pop", s["ini"] + 0.05, None, 0.4))
+            for b in range(4):  # botões em cascata
+                ev.append(("pop", s["ini"] + 0.5 + b * 0.1, None, 0.22))
+            ev.append(("tique", s["ini"] + T_TEXTO, T_TIMER, 0.42))
+            ev.append(("ding", s["ini"] + T_TEXTO + T_TIMER, None, 0.6))
         elif s["tipo"] == "final":
-            ev.append(("pop", s["ini"] + 0.02, None, 0.9))
+            ev.append(("whoosh", s["ini"], None, 0.45))
+            ev.append(("pop", s["ini"] + 0.02, None, 0.5))
+            ev.append(("pop", s["ini"] + 0.5, None, 0.3))
         for p, ini in s.get("narr", []):
             ev.append((p, ini, None, 1.0))
     return ev
@@ -943,7 +950,7 @@ def mixar_audio(video_mudo: Path, saida: Path, segs, total):
         return faltando
 
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(video_mudo)]
-    filtros, rotulos = [], []
+    filtros, rotulos, narr = [], [], []
     n_in = 1
     fmt = "aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo"
     for k, (som, ini, dur, vol) in enumerate(eventos_audio(segs)):
@@ -958,14 +965,25 @@ def mixar_audio(video_mudo: Path, saida: Path, segs, total):
             trim = ""
         ms = int(ini * 1000)
         filtros.append(f"[{n_in}:a]{fmt},{trim}volume={vol},adelay={ms}:all=1[a{k}]")
-        rotulos.append(f"[a{k}]")
+        (narr if isinstance(som, Path) else rotulos).append(f"[a{k}]")
         n_in += 1
+    if narr:
+        filtros.append(f"{''.join(narr)}amix=inputs={len(narr)}:normalize=0:duration=longest,"
+                       f"apad,atrim=0:{total},asplit=2[narr][chave]")
+        rotulos.append("[narr]")
     if disponiveis.get("musica"):
         cmd += ["-stream_loop", "-1", "-i", str(disponiveis["musica"])]
-        filtros.append(f"[{n_in}:a]{fmt},atrim=0:{total},volume={0.07 if tem_narr else 0.12},"
-                       f"afade=t=in:d=0.5,afade=t=out:st={total - 1.5}:d=1.5[mus]")
+        filtros.append(f"[{n_in}:a]{fmt},atrim=0:{total},volume=0.38,"
+                       f"afade=t=in:d=0.4,afade=t=out:st={total - 1.5}:d=1.5[mus0]")
+        if narr:  # ducking: a música abaixa enquanto a narração fala
+            filtros.append("[mus0][chave]sidechaincompress=threshold=0.02:ratio=8:attack=15:"
+                           "release=350:makeup=1[mus]")
+        else:
+            filtros.append("[mus0]anull[mus]")
         rotulos.append("[mus]")
         n_in += 1
+    elif narr:
+        filtros.append("[chave]anullsink")
     filtros.append(f"{''.join(rotulos)}amix=inputs={len(rotulos)}:normalize=0:duration=longest,"
                    f"alimiter=limit=0.95,apad,atrim=0:{total}[aout]")
     cmd += ["-filter_complex", ";".join(filtros), "-map", "0:v", "-map", "[aout]",

@@ -13,6 +13,8 @@ python gerar.py            # vídeo completo -> saida/quiz.mp4
   Opcional: `cor_fundo: [r, g, b]`.
 - `assets/logo.png`: seu logo (sem ele, usa um medalhão "?" provisório).
 - `assets/sons/`: `tique-taque`, `ding`, `whoosh`, `pop`, `musica` (.mp3/.wav/.ogg).
+  Os incluídos foram sintetizados por `python gerar_sons.py` (originais, livres de direitos);
+  substitua qualquer um por outro arquivo com o mesmo nome. A música abaixa sozinha durante a narração.
   Sons ausentes são pulados com aviso; sem nenhum, o vídeo sai mudo.
 - Fonte: Lilita One (OFL) em `assets/fonts/`.
 - `assets/narracao/`: narração opcional, um arquivo por fala: `00_gancho`, `vinheta_facil`,
