@@ -1,0 +1,55 @@
+{
+  "gancho": {
+    "titulo": "SÓ 1% ACERTA AS 5!",
+    "titulo_emoji": "🧠",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Quantas patas tem uma aranha?",
+      "alternativas": ["6", "8", "10", "4"],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": ""
+    },
+    {
+      "texto": "Qual é o maior oceano do mundo?",
+      "alternativas": ["Atlântico", "Índico", "Pacífico", "Ártico"],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": ""
+    },
+    {
+      "texto": "Em que ano Cabral chegou ao Brasil?",
+      "alternativas": ["1492", "1500", "1530", "1822"],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": ""
+    },
+    {
+      "texto": "Qual é o símbolo químico do ouro?",
+      "alternativas": ["Ag", "Au", "Fe", "Ou"],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": ""
+    },
+    {
+      "texto": "Qual é o maior osso do corpo humano?",
+      "alternativas": ["Úmero", "Tíbia", "Fêmur", "Rádio"],
+      "correta": 2,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": ""
+    }
+  ]
+}
