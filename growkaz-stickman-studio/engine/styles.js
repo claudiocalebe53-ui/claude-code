@@ -18,6 +18,10 @@ export const BASE_MOODS = {
 const UI = { card: 'rgba(18,28,48,.94)', cardLine: 'rgba(150,180,230,.25)', text: '#9fb6d8', sub: '#6f84a6', accent: '#ff6f61', gold: '#ffd47e', cream: '#fff1dc', blueprint: '#8fb8e8', bpBg: '#0b1324', good: '#5fd39a' };
 
 export const STYLES = {
+  thumbPop: { name: 'Thumbnail Pop', desc: 'Bright, punchy grade for thumbnails.', ink: '#0c0606', inkFar: '#2e1614', feature: '#fff0e0', rimWidth: 5,
+    ui: { ...UI, gold: '#ffcf3a', accent: '#ff3d2e' },
+    grade: { contrast: 1.1, sat: 1.2, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.45, grain: 0.015, bloom: 0.8 },
+    moods: { dusk: { sky: ['#2a0a14', '#7a1a1e', '#e0502a', '#ffb050'], key: '#ffb050', rim: '#ffd08a', wall: '#3a1612', floor: '#2a100c', dark: '#140606', practical: '#ffc060', fog: '#8a3a26' } } },
   emerald: {
     name: 'GrowKaz Emerald', desc: 'GrowKaz signature look: deep forest-green shadows, warm gold key light, electric lime rim light, rich bloom.',
     ink: '#06110c', inkFar: '#1c3328', feature: '#f2ffe8', rimWidth: 4.5,
