@@ -427,6 +427,23 @@ def placeholder(w, h, cor, tipo, texto=""):
     return img
 
 
+def _borrar(img: Image.Image, raio: float) -> Image.Image:
+    """Desfoque forte sem bordas escuras (espelha as margens antes de borrar)."""
+    if raio <= 0:
+        return img
+    m = int(raio * 3)
+    w, h = img.size
+    grande = Image.new("RGB", (w + 2 * m, h + 2 * m))
+    grande.paste(img, (m, m))
+    grande.paste(img.transpose(Image.FLIP_LEFT_RIGHT).crop((w - m, 0, w, h)), (0, m))
+    grande.paste(img.transpose(Image.FLIP_LEFT_RIGHT).crop((0, 0, m, h)), (w + m, m))
+    topo = grande.crop((0, m, w + 2 * m, 2 * m)).transpose(Image.FLIP_TOP_BOTTOM)
+    base = grande.crop((0, h, w + 2 * m, h + m)).transpose(Image.FLIP_TOP_BOTTOM)
+    grande.paste(topo, (0, 0))
+    grande.paste(base, (0, h + m))
+    return grande.filter(ImageFilter.GaussianBlur(raio)).crop((m, m, m + w, m + h))
+
+
 def moldura(img: Image.Image, angulo=-3.0) -> Image.Image:
     """Moldura branca + sombra, levemente inclinada."""
     b = 16
@@ -532,6 +549,11 @@ class Pergunta:
             img_r = placeholder(IMG_W, IMG_H, cor_ph, "resposta", q["alternativas"][self.correta])
         self.img_q = moldura(img_q, -3)
         self.img_r = moldura(img_r, -3)
+        # Modo "borrado": mostra a imagem da resposta desfocada e revela desembaçando.
+        self.borrar = bool(q.get("imagem_borrada", True)) and pr is not None
+        if self.borrar:
+            raios_blur = [16, 12, 8, 5, 3, 1.5]
+            self.niveis_blur = [moldura(_borrar(img_r, r), -3) for r in raios_blur] + [self.img_r]
 
         alts = q["alternativas"]
         self.botoes = [botao(LETRAS[i], alts[i]) for i in range(4)]
@@ -695,7 +717,23 @@ def tela_pergunta(t, q, idx, tg):
     # --- imagem com moldura (troca na revelação com "flip")
     t_rev = t - (T_TEXTO + T_TIMER)
     zi = ease_out_back((t - 0.15) / 0.35, 1.6)
-    if t_rev < 0:
+    if P.borrar:
+        # imagem da resposta borrada; na revelação desembaça em ~0.45s com um "pulo"
+        niv = P.niveis_blur
+        if t_rev < 0:
+            img = niv[0]
+            esc = zi
+        else:
+            k = ease_out_cubic(t_rev / 0.45)
+            img = niv[min(len(niv) - 1, int(round(k * (len(niv) - 1))))]
+            esc = 1 + 0.08 * math.sin(clamp(t_rev / 0.35) * math.pi)
+        colar_centro(canvas, img, CX, IMG_CY, escala=esc)
+        if t_rev < 0.15:  # selo "?" sobre a imagem borrada
+            sel = _cache_layer("selo_borrado", lambda: texto_layer("?", 170, cor=(255, 205, 0), contorno=12, sombra=10))
+            op = 1 - clamp(t_rev / 0.15) if t_rev > 0 else 1
+            pul = 1 + 0.06 * math.sin(max(0, t) * 2 * math.pi * 1.2)
+            colar_centro(canvas, sel, CX, IMG_CY, escala=zi * pul, opacidade=op, angulo=8)
+    elif t_rev < 0:
         colar_centro(canvas, P.img_q, CX, IMG_CY, escala=zi)
     else:
         k = t_rev / 0.24

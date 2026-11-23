@@ -23,3 +23,5 @@ python gerar.py            # vídeo completo -> saida/quiz.mp4
   Telas se alongam automaticamente se a fala for mais longa que o tempo padrão.
 - `assets/imagens/`: as ilustrações das 5 perguntas iniciais foram desenhadas por `python gerar_imagens.py`.
   Para outras perguntas, coloque suas imagens lá e aponte no JSON (qualquer proporção; são recortadas para 560x380).
+- Imagem borrada: durante a pergunta aparece a imagem da resposta desfocada, que desembaça na revelação.
+  Para usar a imagem da pergunta em vez disso, ponha `"imagem_borrada": false` na pergunta.
