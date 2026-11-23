@@ -46,7 +46,10 @@ def salvar(img, nome):
 def faixa(img, texto, cor=(46, 204, 64), y=None):
     """Etiqueta arredondada com o texto da resposta."""
     d = ImageDraw.Draw(img)
-    fo = f(70 * S)
+    tam = 70
+    while f(tam * S).getlength(texto) > W - 170 * S and tam > 36:  # textos longos encolhem
+        tam -= 2
+    fo = f(tam * S)
     tw = fo.getlength(texto)
     pw, ph = tw + 70 * S, 104 * S
     x0 = (W - pw) / 2

@@ -1,0 +1,150 @@
+00_gancho          0.00-  9.14  esperado: Trinta e cinco perguntas, do fácil ao impossível! Você tem 5 segundos pra cada uma. Conta seus pontos e no final me diz quantas acertou!
+                                ouvido:   35 perguntas. Do fácil ao impossível. Você tem 5 segundos para cada uma. Conta seus pontos e no final me diz quantas acertou.
+vinheta_facil      9.14- 10.63  esperado: Nível fácil!
+                                ouvido:   Nível Fácil
+p1_pergunta       10.63- 12.94  esperado: Quantos dias tem um ano bissexto?
+                                ouvido:   Quantos dias tem um ano bissexto?
+p1_resposta       12.94- 15.45  esperado: Trezentos e sessenta e seis dias!
+                                ouvido:   366 dias.
+p2_pergunta       15.45- 18.17  esperado: Qual animal é conhecido como o rei da selva?
+                                ouvido:   Qual animal é conhecido como o rei da selva?
+p2_resposta       18.17- 18.97  esperado: O leão!
+                                ouvido:   O leão.
+p3_pergunta       18.97- 20.91  esperado: Quantas cores tem o arco-íris?
+                                ouvido:   Quantas cores tem o arcoíris?
+p3_resposta       20.91- 22.15  esperado: Sete cores!
+                                ouvido:   7 cores.
+p4_pergunta       22.15- 24.32  esperado: Qual é o idioma oficial do Brasil?
+                                ouvido:   Qual é o idioma oficial do Brasil?
+p4_resposta       24.32- 25.32  esperado: O português!
+                                ouvido:   O português.
+p5_pergunta       25.32- 27.20  esperado: Quantos lados tem um triângulo?
+                                ouvido:   Quantos lados tem um triângulo?
+p5_resposta       27.20- 28.29  esperado: Três lados!
+                                ouvido:   Três lados. De
+p6_pergunta       28.29- 29.97  esperado: De que cor é a esmeralda?
+                                ouvido:   que cor é a esmeralda?
+p6_resposta       29.97- 30.70  esperado: Verde!
+                                ouvido:   Verde.
+p7_pergunta       30.70- 32.79  esperado: Qual é o maior animal terrestre?
+                                ouvido:   Qual é o maior animal terrestre?
+p7_resposta       32.79- 33.73  esperado: O elefante!
+                                ouvido:   O elefante.
+p8_pergunta       33.73- 35.54  esperado: Quantos minutos tem uma hora?
+                                ouvido:   Quantos minutos tem uma hora?
+p8_resposta       35.54- 36.92  esperado: Sessenta minutos!
+                                ouvido:   Sessenta minutos.
+p9_pergunta       36.92- 39.13  esperado: Qual é o satélite natural da Terra?
+                                ouvido:   Qual é o satélite natural da terra?
+p9_resposta       39.13- 39.87  esperado: A Lua!
+                                ouvido:   A lua.
+p10_pergunta      39.87- 41.82  esperado: Em que continente fica o Egito?
+                                ouvido:   Em que continente fica o Egito?
+p10_resposta      41.82- 42.75  esperado: Na África!
+                                ouvido:   Na África.
+p11_pergunta      42.75- 44.61  esperado: Quantas patas tem um inseto?
+                                ouvido:   Quantas patas tem um inseto?
+p11_resposta      44.61- 45.86  esperado: Seis patas!
+                                ouvido:   Seis patas.
+p12_pergunta      45.86- 47.86  esperado: Qual é a fórmula química da água?
+                                ouvido:   Qual é a fórmula química da água?
+p12_resposta      47.86- 49.20  esperado: H dois O!
+                                ouvido:   H2O.
+vinheta_medio     49.20- 50.48  esperado: Nível médio!
+                                ouvido:   Nível Médio
+p13_pergunta      50.48- 52.09  esperado: Quem pintou a Mona Lisa?
+                                ouvido:   Quem pintou a Mona Lisa?
+p13_resposta      52.09- 53.42  esperado: Leonardo da Vinci!
+                                ouvido:   Leonardo da Vinci.
+p14_pergunta      53.42- 56.05  esperado: Qual gás nós precisamos respirar para viver?
+                                ouvido:   Qual gás nós precisamos respirar para viver?
+p14_resposta      56.05- 57.07  esperado: O oxigênio!
+                                ouvido:   O oxigênio.
+p15_pergunta      57.07- 58.81  esperado: Qual é a capital do Canadá?
+                                ouvido:   Qual é a capital do Canadá?
+p15_resposta      58.81- 59.60  esperado: Ottawa!
+                                ouvido:   Otawa.
+p16_pergunta      59.60- 62.41  esperado: Quantos jogadores um time de futebol tem em campo?
+                                ouvido:   Quantos jogadores um time de futebol tem em campo?
+p16_resposta      62.41- 63.68  esperado: Onze jogadores!
+                                ouvido:   Onze jogadores.
+p17_pergunta      63.68- 66.25  esperado: Qual metal é líquido em temperatura ambiente?
+                                ouvido:   Qual metal é líquido em temperatura ambiente?
+p17_resposta      66.25- 67.12  esperado: O mercúrio!
+                                ouvido:   O mercúrio.
+p18_pergunta      67.12- 68.94  esperado: Quem escreveu Dom Casmurro?
+                                ouvido:   Quem escreveu Dom Casmurro?
+p18_resposta      68.94- 70.28  esperado: Machado de Assis!
+                                ouvido:   Machado de Assis.
+p19_pergunta      70.28- 72.74  esperado: Qual é o maior deserto quente do mundo?
+                                ouvido:   Qual é o maior deserto quente do mundo?
+p19_resposta      72.74- 73.58  esperado: O Saara!
+                                ouvido:   O Sahara.
+p20_pergunta      73.58- 75.71  esperado: Em que país fica a Torre de Pisa?
+                                ouvido:   Em que país fica a Torre de Pisa?
+p20_resposta      75.71- 76.55  esperado: Na Itália!
+                                ouvido:   Na Itália.
+p21_pergunta      76.55- 79.13  esperado: Qual planeta tem os anéis mais visíveis?
+                                ouvido:   Qual planeta tem os anéis mais visíveis?
+p21_resposta      79.13- 80.04  esperado: Saturno!
+                                ouvido:   Saturno.
+p22_pergunta      80.04- 81.61  esperado: Qual é a moeda do Japão?
+                                ouvido:   Qual é a moeda do Japão?
+p22_resposta      81.61- 82.41  esperado: O iene!
+                                ouvido:   O Iene.
+p23_pergunta      82.41- 85.56  esperado: Em que ano o homem pisou na Lua pela primeira vez?
+                                ouvido:   Em que ano o homem pisou na lua pela primeira vez? Em
+p23_resposta      85.56- 87.78  esperado: Em 1969!
+                                ouvido:   1969.
+p24_pergunta      87.78- 90.43  esperado: Qual instrumento tem 88 teclas?
+                                ouvido:   Qual instrumento tem 88 teclas?
+p24_resposta      90.43- 91.28  esperado: O piano!
+                                ouvido:   O piano.
+vinheta_dificil   91.28- 92.74  esperado: Nível difícil!
+                                ouvido:   Nível Difícil.
+p25_pergunta      92.74- 95.86  esperado: Qual é o elemento químico mais abundante do universo?
+                                ouvido:   Qual é o elemento químico mais abundante do universo?
+p25_resposta      95.86- 96.90  esperado: O hidrogênio!
+                                ouvido:   O hidrogênio.
+p26_pergunta      96.90- 98.68  esperado: Qual é a capital da Turquia?
+                                ouvido:   Qual é a capital da Turquia?
+p26_resposta      98.68- 99.46  esperado: Ancara!
+                                ouvido:   Ankara.
+p27_pergunta      99.46-101.99  esperado: Qual planeta gira praticamente deitado?
+                                ouvido:   Qual planeta gira praticamente deitado?
+p27_resposta     101.99-102.66  esperado: Urano!
+                                ouvido:   Urano.
+p28_pergunta     102.66-104.46  esperado: Qual rio passa por Paris?
+                                ouvido:   Qual rio passa por Paris?
+p28_resposta     104.46-105.43  esperado: O rio Sena!
+                                ouvido:   O rio Sena.
+p29_pergunta     105.43-107.58  esperado: Qual país tem mais ilhas no mundo?
+                                ouvido:   Qual país tem mais ilhas no mundo?
+p29_resposta     107.58-108.50  esperado: A Suécia!
+                                ouvido:   A Suécia.
+p30_pergunta     108.50-111.10  esperado: Qual é o ponto mais profundo dos oceanos?
+                                ouvido:   Qual é o ponto mais profundo dos oceanos?
+p30_resposta     111.10-112.65  esperado: A Fossa das Marianas!
+                                ouvido:   A Fossa das Marianas.
+p31_pergunta     112.65-114.64  esperado: Em que ano caiu o Muro de Berlim?
+                                ouvido:   Em que ano caiu o Muro de Berlim? Em
+p31_resposta     114.64-116.74  esperado: Em 1989!
+                                ouvido:   1989.
+p32_pergunta     116.74-119.15  esperado: Qual é o menor planeta do Sistema Solar?
+                                ouvido:   Qual é o menor planeta do sistema solar?
+p32_resposta     119.15-119.95  esperado: Mercúrio!
+                                ouvido:   Mercúrio.
+p33_pergunta     119.95-122.01  esperado: Qual é a capital da Nova Zelândia?
+                                ouvido:   Qual é a capital da Nova Zelândia?
+p33_resposta     122.01-122.82  esperado: Wellington!
+                                ouvido:   Wellington.
+p34_pergunta     122.82-125.18  esperado: Quantos elementos tem a tabela periódica?
+                                ouvido:   Quantos elementos tem a tabela periódica?
+p34_resposta     125.18-126.39  esperado: Cento e dezoito!
+                                ouvido:   118.
+p35_pergunta     126.39-128.93  esperado: Qual animal tem o maior cérebro do mundo?
+                                ouvido:   Qual animal tem o maior cérebro do mundo?
+p35_resposta     128.93-129.97  esperado: O cachalote!
+                                ouvido:   O cachalote.
+99_final         129.97-135.28  esperado: E aí, quantas você acertou de trinta e cinco? Comenta aí! E se inscreve pra mais quizzes!
+                                ouvido:   E aí, quantas você acertou de 35? Comenta aí e se inscreve pra mais quizzes!

@@ -1,0 +1,542 @@
+{
+  "gancho": {
+    "titulo": "35 PERGUNTAS, DO FÁCIL AO IMPOSSÍVEL!",
+    "titulo_emoji": "🧠",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Trinta e cinco perguntas, do fácil ao impossível! Você tem 5 segundos pra cada uma. Conta seus pontos e no final me diz quantas acertou!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Inscreva-se para mais quizzes!",
+    "fala": "E aí, quantas você acertou de trinta e cinco? Comenta aí! E se inscreve pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Quantos dias tem um ano bissexto?",
+      "alternativas": [
+        "364",
+        "365",
+        "366",
+        "367"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Quantos dias tem um ano bissexto?",
+      "fala_resposta": "Trezentos e sessenta e seis dias!"
+    },
+    {
+      "texto": "Qual animal é conhecido como o rei da selva?",
+      "alternativas": [
+        "Tigre",
+        "Leão",
+        "Elefante",
+        "Gorila"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Qual animal é conhecido como o rei da selva?",
+      "fala_resposta": "O leão!"
+    },
+    {
+      "texto": "Quantas cores tem o arco-íris?",
+      "alternativas": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Quantas cores tem o arco-íris?",
+      "fala_resposta": "Sete cores!"
+    },
+    {
+      "texto": "Qual é o idioma oficial do Brasil?",
+      "alternativas": [
+        "Espanhol",
+        "Português",
+        "Inglês",
+        "Francês"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Qual é o idioma oficial do Brasil?",
+      "fala_resposta": "O português!"
+    },
+    {
+      "texto": "Quantos lados tem um triângulo?",
+      "alternativas": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Quantos lados tem um triângulo?",
+      "fala_resposta": "Três lados!"
+    },
+    {
+      "texto": "De que cor é a esmeralda?",
+      "alternativas": [
+        "Vermelha",
+        "Azul",
+        "Verde",
+        "Roxa"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p6_resposta.png",
+      "fala_pergunta": "De que cor é a esmeralda?",
+      "fala_resposta": "Verde!"
+    },
+    {
+      "texto": "Qual é o maior animal terrestre?",
+      "alternativas": [
+        "Girafa",
+        "Elefante",
+        "Rinoceronte",
+        "Hipopótamo"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p7_resposta.png",
+      "fala_pergunta": "Qual é o maior animal terrestre?",
+      "fala_resposta": "O elefante!"
+    },
+    {
+      "texto": "Quantos minutos tem uma hora?",
+      "alternativas": [
+        "30",
+        "60",
+        "90",
+        "100"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p8_resposta.png",
+      "fala_pergunta": "Quantos minutos tem uma hora?",
+      "fala_resposta": "Sessenta minutos!"
+    },
+    {
+      "texto": "Qual é o satélite natural da Terra?",
+      "alternativas": [
+        "Sol",
+        "Lua",
+        "Marte",
+        "Vênus"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p9_resposta.png",
+      "fala_pergunta": "Qual é o satélite natural da Terra?",
+      "fala_resposta": "A Lua!"
+    },
+    {
+      "texto": "Em que continente fica o Egito?",
+      "alternativas": [
+        "Ásia",
+        "Europa",
+        "África",
+        "Oceania"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p10_resposta.png",
+      "fala_pergunta": "Em que continente fica o Egito?",
+      "fala_resposta": "Na África!"
+    },
+    {
+      "texto": "Quantas patas tem um inseto?",
+      "alternativas": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p11_resposta.png",
+      "fala_pergunta": "Quantas patas tem um inseto?",
+      "fala_resposta": "Seis patas!"
+    },
+    {
+      "texto": "Qual é a fórmula química da água?",
+      "alternativas": [
+        "H2O",
+        "CO2",
+        "O2",
+        "NaCl"
+      ],
+      "correta": 0,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p12_resposta.png",
+      "fala_pergunta": "Qual é a fórmula química da água?",
+      "fala_resposta": "H dois O!"
+    },
+    {
+      "texto": "Quem pintou a Mona Lisa?",
+      "alternativas": [
+        "Michelangelo",
+        "Leonardo da Vinci",
+        "Van Gogh",
+        "Picasso"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p13_resposta.png",
+      "fala_pergunta": "Quem pintou a Mona Lisa?",
+      "fala_resposta": "Leonardo da Vinci!"
+    },
+    {
+      "texto": "Qual gás nós precisamos respirar para viver?",
+      "alternativas": [
+        "Nitrogênio",
+        "Oxigênio",
+        "Hélio",
+        "Hidrogênio"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p14_resposta.png",
+      "fala_pergunta": "Qual gás nós precisamos respirar para viver?",
+      "fala_resposta": "O oxigênio!"
+    },
+    {
+      "texto": "Qual é a capital do Canadá?",
+      "alternativas": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa",
+        "Montreal"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p15_resposta.png",
+      "fala_pergunta": "Qual é a capital do Canadá?",
+      "fala_resposta": "Ottawa!"
+    },
+    {
+      "texto": "Quantos jogadores um time de futebol tem em campo?",
+      "alternativas": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p16_resposta.png",
+      "fala_pergunta": "Quantos jogadores um time de futebol tem em campo?",
+      "fala_resposta": "Onze jogadores!"
+    },
+    {
+      "texto": "Qual metal é líquido em temperatura ambiente?",
+      "alternativas": [
+        "Ferro",
+        "Mercúrio",
+        "Prata",
+        "Chumbo"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p17_resposta.png",
+      "fala_pergunta": "Qual metal é líquido em temperatura ambiente?",
+      "fala_resposta": "O mercúrio!"
+    },
+    {
+      "texto": "Quem escreveu Dom Casmurro?",
+      "alternativas": [
+        "José de Alencar",
+        "Machado de Assis",
+        "Jorge Amado",
+        "Clarice Lispector"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p18_resposta.png",
+      "fala_pergunta": "Quem escreveu Dom Casmurro?",
+      "fala_resposta": "Machado de Assis!"
+    },
+    {
+      "texto": "Qual é o maior deserto quente do mundo?",
+      "alternativas": [
+        "Saara",
+        "Gobi",
+        "Atacama",
+        "Kalahari"
+      ],
+      "correta": 0,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p19_resposta.png",
+      "fala_pergunta": "Qual é o maior deserto quente do mundo?",
+      "fala_resposta": "O Saara!"
+    },
+    {
+      "texto": "Em que país fica a Torre de Pisa?",
+      "alternativas": [
+        "França",
+        "Espanha",
+        "Itália",
+        "Grécia"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p20_resposta.png",
+      "fala_pergunta": "Em que país fica a Torre de Pisa?",
+      "fala_resposta": "Na Itália!"
+    },
+    {
+      "texto": "Qual planeta tem os anéis mais visíveis?",
+      "alternativas": [
+        "Júpiter",
+        "Saturno",
+        "Urano",
+        "Netuno"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p21_resposta.png",
+      "fala_pergunta": "Qual planeta tem os anéis mais visíveis?",
+      "fala_resposta": "Saturno!"
+    },
+    {
+      "texto": "Qual é a moeda do Japão?",
+      "alternativas": [
+        "Yuan",
+        "Won",
+        "Iene",
+        "Rupia"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p22_resposta.png",
+      "fala_pergunta": "Qual é a moeda do Japão?",
+      "fala_resposta": "O iene!"
+    },
+    {
+      "texto": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "alternativas": [
+        "1959",
+        "1969",
+        "1979",
+        "1989"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p23_resposta.png",
+      "fala_pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "fala_resposta": "Em 1969!"
+    },
+    {
+      "texto": "Qual instrumento tem 88 teclas?",
+      "alternativas": [
+        "Violão",
+        "Piano",
+        "Acordeão",
+        "Harpa"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p24_resposta.png",
+      "fala_pergunta": "Qual instrumento tem 88 teclas?",
+      "fala_resposta": "O piano!"
+    },
+    {
+      "texto": "Qual é o elemento químico mais abundante do universo?",
+      "alternativas": [
+        "Oxigênio",
+        "Hidrogênio",
+        "Hélio",
+        "Carbono"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p25_resposta.png",
+      "fala_pergunta": "Qual é o elemento químico mais abundante do universo?",
+      "fala_resposta": "O hidrogênio!"
+    },
+    {
+      "texto": "Qual é a capital da Turquia?",
+      "alternativas": [
+        "Istambul",
+        "Ancara",
+        "Esmirna",
+        "Antália"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p26_resposta.png",
+      "fala_pergunta": "Qual é a capital da Turquia?",
+      "fala_resposta": "Ancara!"
+    },
+    {
+      "texto": "Qual planeta gira praticamente deitado?",
+      "alternativas": [
+        "Netuno",
+        "Urano",
+        "Saturno",
+        "Marte"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p27_resposta.png",
+      "fala_pergunta": "Qual planeta gira praticamente deitado?",
+      "fala_resposta": "Urano!"
+    },
+    {
+      "texto": "Qual rio passa por Paris?",
+      "alternativas": [
+        "Tâmisa",
+        "Sena",
+        "Danúbio",
+        "Reno"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p28_resposta.png",
+      "fala_pergunta": "Qual rio passa por Paris?",
+      "fala_resposta": "O rio Sena!"
+    },
+    {
+      "texto": "Qual país tem mais ilhas no mundo?",
+      "alternativas": [
+        "Indonésia",
+        "Filipinas",
+        "Suécia",
+        "Japão"
+      ],
+      "correta": 2,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p29_resposta.png",
+      "fala_pergunta": "Qual país tem mais ilhas no mundo?",
+      "fala_resposta": "A Suécia!"
+    },
+    {
+      "texto": "Qual é o ponto mais profundo dos oceanos?",
+      "alternativas": [
+        "Fossa das Marianas",
+        "Fossa de Porto Rico",
+        "Fossa de Java",
+        "Fossa de Tonga"
+      ],
+      "correta": 0,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p30_resposta.png",
+      "fala_pergunta": "Qual é o ponto mais profundo dos oceanos?",
+      "fala_resposta": "A Fossa das Marianas!"
+    },
+    {
+      "texto": "Em que ano caiu o Muro de Berlim?",
+      "alternativas": [
+        "1985",
+        "1989",
+        "1991",
+        "1995"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p31_resposta.png",
+      "fala_pergunta": "Em que ano caiu o Muro de Berlim?",
+      "fala_resposta": "Em 1989!"
+    },
+    {
+      "texto": "Qual é o menor planeta do Sistema Solar?",
+      "alternativas": [
+        "Marte",
+        "Mercúrio",
+        "Plutão",
+        "Vênus"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p32_resposta.png",
+      "fala_pergunta": "Qual é o menor planeta do Sistema Solar?",
+      "fala_resposta": "Mercúrio!"
+    },
+    {
+      "texto": "Qual é a capital da Nova Zelândia?",
+      "alternativas": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p33_resposta.png",
+      "fala_pergunta": "Qual é a capital da Nova Zelândia?",
+      "fala_resposta": "Wellington!"
+    },
+    {
+      "texto": "Quantos elementos tem a tabela periódica?",
+      "alternativas": [
+        "92",
+        "108",
+        "118",
+        "126"
+      ],
+      "correta": 2,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p34_resposta.png",
+      "fala_pergunta": "Quantos elementos tem a tabela periódica?",
+      "fala_resposta": "Cento e dezoito!"
+    },
+    {
+      "texto": "Qual animal tem o maior cérebro do mundo?",
+      "alternativas": [
+        "Elefante",
+        "Cachalote",
+        "Baleia-azul",
+        "Golfinho"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p35_resposta.png",
+      "fala_pergunta": "Qual animal tem o maior cérebro do mundo?",
+      "fala_resposta": "O cachalote!"
+    }
+  ]
+}
