@@ -1,0 +1,30 @@
+00_gancho          0.00-  3.56  esperado: Quase ninguém acerta a última! Você tem 5 segundos!
+                                ouvido:   Quase ninguém acerta a última, você tem 5 segundos,
+vinheta_facil      3.56-  4.72  esperado: Nível fácil!
+                                ouvido:   nível fácil,
+p1_pergunta        4.72-  7.17  esperado: Qual órgão bombeia o sangue pelo corpo?
+                                ouvido:   qual órgão bombeia o sangue pelo corpo?
+p1_resposta        7.17-  8.09  esperado: O coração!
+                                ouvido:   O coração,
+p2_pergunta        8.09-  9.91  esperado: Quantos dentes tem um adulto?
+                                ouvido:   quantos dentes tem um adulto?
+p2_resposta        9.91- 11.51  esperado: Trinta e dois dentes!
+                                ouvido:   32 dentes,
+vinheta_medio     11.51- 12.49  esperado: Nível médio!
+                                ouvido:   nível médio,
+p3_pergunta       12.49- 14.74  esperado: Qual é o maior órgão do corpo humano?
+                                ouvido:   qual é o maior órgão do corpo humano?
+p3_resposta       14.74- 15.59  esperado: A pele!
+                                ouvido:   A pele,
+p4_pergunta       15.59- 17.41  esperado: Quantos ossos tem um adulto?
+                                ouvido:   quantos ossos tem um adulto?
+p4_resposta       17.41- 19.33  esperado: Duzentos e seis ossos!
+                                ouvido:   206 ossos,
+vinheta_dificil   19.33- 20.60  esperado: Nível difícil!
+                                ouvido:   nível difícil,
+p5_pergunta       20.60- 22.82  esperado: Qual é o menor osso do corpo humano?
+                                ouvido:   qual é o menor osso do corpo humano?
+p5_resposta       22.82- 24.55  esperado: O estribo, no ouvido!
+                                ouvido:   O estribo, no ouvido,
+99_final          24.55- 28.73  esperado: Quantas você acertou? Comenta aí! E segue pra mais quizzes!
+                                ouvido:   quantas você acertou? Comenta aí e segue para mais quizzes!

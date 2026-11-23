@@ -87,12 +87,22 @@ SONS = {
 EXT_AUDIO = (".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac")
 
 
+# Pasta do vídeo atual (--projeto videos/<nome>): tem perguntas.json, narracao/ e imagens/.
+PROJETO: Path | None = None
+
+
+def _pastas(sub: str) -> list[Path]:
+    return ([PROJETO / sub] if PROJETO else []) + [ASSETS / sub]
+
+
 def achar_narracao(nome: str) -> Path | None:
-    """assets/narracao/<nome>.(wav|mp3|...) — ex.: 00_gancho, vinheta_facil, p1_pergunta."""
-    for ext in EXT_AUDIO:
-        p = ASSETS / "narracao" / (nome + ext)
-        if p.exists():
-            return p
+    """<projeto>/narracao/<nome>.(wav|mp3|...) — ex.: 00_gancho, vinheta_facil, p1_pergunta."""
+    pastas = [PROJETO / "narracao"] if PROJETO else [ASSETS / "narracao"]
+    for pasta in pastas:
+        for ext in EXT_AUDIO:
+            p = pasta / (nome + ext)
+            if p.exists():
+                return p
     return None
 
 
@@ -383,7 +393,7 @@ def _cover(img: Image.Image, w, h) -> Image.Image:
 def _resolver_imagem(nome: str) -> Path | None:
     if not nome:
         return None
-    for p in (Path(nome), BASE / nome, ASSETS / "imagens" / nome):
+    for p in (Path(nome), BASE / nome, *(d / nome for d in _pastas("imagens"))):
         if p.exists():
             return p
     print(f"  ! imagem não encontrada: {nome} (usando placeholder)", file=sys.stderr)
@@ -527,9 +537,10 @@ class Pergunta:
         tam = 74
         while True:
             linhas = quebrar_linhas(q["texto"], tam, largura)
-            if len(linhas) <= 3 or tam <= 40:
+            # prefere 2 linhas (3 linhas encostam na imagem); só aceita 3 se a fonte ficar pequena demais
+            if len(linhas) <= 2 or (len(linhas) <= 3 and tam <= 54) or tam <= 40:
                 break
-            tam -= 4
+            tam -= 2
         self.tam = tam
         self.linhas = linhas
         self._cache_texto: dict[int, Image.Image] = {}
@@ -637,6 +648,9 @@ def _titulo_gancho(g):
     img = Image.new("RGBA", (w, a.height + b.height - 50), (0, 0, 0, 0))
     img.alpha_composite(a, ((w - a.width) // 2, 0))
     img.alpha_composite(b, ((w - b.width) // 2, a.height - 50))
+    if img.width > 960:  # ganchos longos: reduz para caber com margem
+        esc = 960 / img.width
+        img = img.resize((960, int(img.height * esc)), Image.LANCZOS)
     return img
 
 
@@ -943,9 +957,9 @@ _W_SEGS = None
 _W_FPS = 60
 
 
-def _init_worker(dados, segs, fps):
-    global _W_DADOS, _W_SEGS, _W_FPS
-    _W_DADOS, _W_SEGS, _W_FPS = dados, segs, fps
+def _init_worker(dados, segs, fps, projeto=None):
+    global _W_DADOS, _W_SEGS, _W_FPS, PROJETO
+    _W_DADOS, _W_SEGS, _W_FPS, PROJETO = dados, segs, fps, projeto
 
 
 def render_tempo(tg, dados, segs) -> Image.Image:
@@ -1045,7 +1059,7 @@ def renderizar(dados, saida: Path, fps=60, teste=False, procs=None):
         stdin=subprocess.PIPE)
     t0 = time.time()
     procs = procs or max(1, (os.cpu_count() or 2))
-    with Pool(procs, initializer=_init_worker, initargs=(dados, segs, fps)) as pool:
+    with Pool(procs, initializer=_init_worker, initargs=(dados, segs, fps, PROJETO)) as pool:
         lote = procs * 6  # lotes limitados: evita acumular frames na memória
         feitos = 0
         for ini in range(0, n, lote):
@@ -1115,7 +1129,9 @@ def verificar_ambiente():
 
 def main():
     ap = argparse.ArgumentParser(description="Gerador de vídeos de quiz 9:16")
-    ap.add_argument("--json", default=str(BASE / "perguntas.json"))
+    ap.add_argument("--projeto", default=None,
+                    help="pasta do vídeo (ex.: videos/01_animais) com perguntas.json, narracao/ e imagens/")
+    ap.add_argument("--json", default=None)
     ap.add_argument("--saida", default=None)
     ap.add_argument("--fps", type=int, default=60)
     ap.add_argument("--teste", action="store_true", help="vídeo curto: gancho + 1 pergunta + final")
@@ -1123,14 +1139,20 @@ def main():
     ap.add_argument("--procs", type=int, default=None)
     a = ap.parse_args()
 
+    global PROJETO
     verificar_ambiente()
-    with open(a.json, encoding="utf-8") as f:
+    nome = "quiz"
+    if a.projeto:
+        PROJETO = Path(a.projeto).resolve()
+        nome = PROJETO.name
+    json_path = a.json or (PROJETO / "perguntas.json" if PROJETO else BASE / "perguntas.json")
+    with open(json_path, encoding="utf-8") as f:
         dados = json.load(f)
 
     if a.previa:
-        previa(dados, BASE / "saida" / "previa")
+        previa(dados, BASE / "saida" / ("previa" if not PROJETO else f"previa_{nome}"))
         return
-    saida = Path(a.saida) if a.saida else BASE / "saida" / ("quiz_teste.mp4" if a.teste else "quiz.mp4")
+    saida = Path(a.saida) if a.saida else BASE / "saida" / (f"{nome}_teste.mp4" if a.teste else f"{nome}.mp4")
     renderizar(dados, saida, fps=a.fps, teste=a.teste, procs=a.procs)
 
 

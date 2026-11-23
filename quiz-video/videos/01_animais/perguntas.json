@@ -1,0 +1,92 @@
+{
+  "gancho": {
+    "titulo": "DUVIDO VOCÊ ACERTAR AS 5!",
+    "titulo_emoji": "🐾",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Duvido você acertar as 5! Você tem 5 segundos!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!",
+    "fala": "Quantas você acertou? Comenta aí! E segue pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Qual é o maior animal do planeta?",
+      "alternativas": [
+        "Elefante",
+        "Baleia-azul",
+        "Girafa",
+        "Tubarão-baleia"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Qual é o maior animal do planeta?",
+      "fala_resposta": "A baleia-azul!"
+    },
+    {
+      "texto": "Quantos corações tem um polvo?",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Quantos corações tem um polvo?",
+      "fala_resposta": "Três corações!"
+    },
+    {
+      "texto": "Qual é o animal terrestre mais rápido?",
+      "alternativas": [
+        "Leão",
+        "Guepardo",
+        "Cavalo",
+        "Antílope"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Qual é o animal terrestre mais rápido?",
+      "fala_resposta": "O guepardo!"
+    },
+    {
+      "texto": "Qual é o único mamífero que consegue voar?",
+      "alternativas": [
+        "Morcego",
+        "Esquilo-voador",
+        "Pinguim",
+        "Avestruz"
+      ],
+      "correta": 0,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Qual é o único mamífero que consegue voar?",
+      "fala_resposta": "O morcego!"
+    },
+    {
+      "texto": "Qual animal dorme até 22 horas por dia?",
+      "alternativas": [
+        "Coala",
+        "Preguiça",
+        "Gato",
+        "Leão"
+      ],
+      "correta": 0,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Qual animal dorme até 22 horas por dia?",
+      "fala_resposta": "O coala!"
+    }
+  ]
+}

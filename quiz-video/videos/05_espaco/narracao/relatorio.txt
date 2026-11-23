@@ -1,0 +1,30 @@
+00_gancho          0.00-  3.38  esperado: Só gênio acerta as 5! Você tem 5 segundos!
+                                ouvido:   Só gênio acerta às 5, você tem 5 segundos!
+vinheta_facil      3.38-  4.50  esperado: Nível fácil!
+                                ouvido:   Nível Fácil
+p1_pergunta        4.50-  6.85  esperado: Qual é o maior planeta do Sistema Solar?
+                                ouvido:   Qual é o maior planeta do sistema solar?
+p1_resposta        6.85-  7.64  esperado: Júpiter!
+                                ouvido:   Júpiter
+p2_pergunta        7.64- 10.07  esperado: Qual planeta é chamado de Planeta Vermelho?
+                                ouvido:   Qual planeta é chamado de planeta vermelho?
+p2_resposta       10.07- 10.84  esperado: Marte!
+                                ouvido:   Marte
+vinheta_medio     10.84- 11.89  esperado: Nível médio!
+                                ouvido:   Nível Médio
+p3_pergunta       11.89- 14.16  esperado: Qual é o planeta mais próximo do Sol?
+                                ouvido:   Qual é o planeta mais próximo do Sol?
+p3_resposta       14.16- 14.99  esperado: Mercúrio!
+                                ouvido:   Mercúrio
+p4_pergunta       14.99- 17.08  esperado: Quantos planetas tem o Sistema Solar?
+                                ouvido:   Quantos planetas tem o sistema solar?
+p4_resposta       17.08- 18.30  esperado: Oito planetas!
+                                ouvido:   Oito planetas
+vinheta_dificil   18.30- 19.57  esperado: Nível difícil!
+                                ouvido:   Nível Difícil
+p5_pergunta       19.57- 22.18  esperado: Qual é o planeta mais quente do Sistema Solar?
+                                ouvido:   Qual é o planeta mais quente do sistema solar?
+p5_resposta       22.18- 23.04  esperado: Vênus!
+                                ouvido:   Venos
+99_final          23.04- 27.30  esperado: Quantas você acertou? Comenta aí! E segue pra mais quizzes!
+                                ouvido:   Quantas você acertou? Comenta aí! E segue para mais quizzes!

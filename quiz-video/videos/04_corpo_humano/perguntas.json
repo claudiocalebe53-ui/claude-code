@@ -1,0 +1,92 @@
+{
+  "gancho": {
+    "titulo": "QUASE NINGUÉM ACERTA A ÚLTIMA!",
+    "titulo_emoji": "🧠",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Quase ninguém acerta a última! Você tem 5 segundos!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!",
+    "fala": "Quantas você acertou? Comenta aí! E segue pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Qual órgão bombeia o sangue pelo corpo?",
+      "alternativas": [
+        "Pulmão",
+        "Fígado",
+        "Coração",
+        "Rim"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Qual órgão bombeia o sangue pelo corpo?",
+      "fala_resposta": "O coração!"
+    },
+    {
+      "texto": "Quantos dentes tem um adulto?",
+      "alternativas": [
+        "28",
+        "30",
+        "32",
+        "36"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Quantos dentes tem um adulto?",
+      "fala_resposta": "Trinta e dois dentes!"
+    },
+    {
+      "texto": "Qual é o maior órgão do corpo humano?",
+      "alternativas": [
+        "Fígado",
+        "Pele",
+        "Intestino",
+        "Cérebro"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Qual é o maior órgão do corpo humano?",
+      "fala_resposta": "A pele!"
+    },
+    {
+      "texto": "Quantos ossos tem um adulto?",
+      "alternativas": [
+        "186",
+        "206",
+        "226",
+        "306"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Quantos ossos tem um adulto?",
+      "fala_resposta": "Duzentos e seis ossos!"
+    },
+    {
+      "texto": "Qual é o menor osso do corpo humano?",
+      "alternativas": [
+        "Estribo",
+        "Martelo",
+        "Bigorna",
+        "Falange"
+      ],
+      "correta": 0,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Qual é o menor osso do corpo humano?",
+      "fala_resposta": "O estribo, no ouvido!"
+    }
+  ]
+}

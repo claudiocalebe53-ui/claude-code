@@ -1,0 +1,30 @@
+00_gancho          0.00-  3.54  esperado: Só 1% acerta as 5! Você tem 5 segundos!
+                                ouvido:   Só 1 % acerta em 5, você tem 5 segundos.
+vinheta_facil      3.54-  4.64  esperado: Nível fácil!
+                                ouvido:   Nível fácil.
+p1_pergunta        4.64-  6.43  esperado: Qual é o maior país do mundo?
+                                ouvido:   Qual é o maior país do mundo?
+p1_resposta        6.43-  7.26  esperado: A Rússia!
+                                ouvido:   A Rússia.
+p2_pergunta        7.26-  8.79  esperado: Qual é a capital da França?
+                                ouvido:   Qual é a capital da França?
+p2_resposta        8.79-  9.54  esperado: Paris!
+                                ouvido:   Paris.
+vinheta_medio      9.54- 10.55  esperado: Nível médio!
+                                ouvido:   Nível médio.
+p3_pergunta       10.55- 12.75  esperado: Qual é a montanha mais alta do mundo?
+                                ouvido:   Qual é a montanha mais alta do mundo?
+p3_resposta       12.75- 13.93  esperado: O Monte Everest!
+                                ouvido:   O Monte Everest.
+p4_pergunta       13.93- 15.70  esperado: Qual é o menor país do mundo?
+                                ouvido:   Qual é o menor país do mundo?
+p4_resposta       15.70- 16.71  esperado: O Vaticano!
+                                ouvido:   O Vaticano.
+vinheta_dificil   16.71- 17.98  esperado: Nível difícil!
+                                ouvido:   Nível difícil.
+p5_pergunta       17.98- 19.69  esperado: Qual é a capital da Austrália?
+                                ouvido:   Qual é a capital da Austrália?
+p5_resposta       19.69- 20.50  esperado: Canberra!
+                                ouvido:   Camberra.
+99_final          20.50- 24.83  esperado: Quantas você acertou? Comenta aí! E segue pra mais quizzes!
+                                ouvido:   Quantas você acertou? Comenta aí e segue para mais quizzes.

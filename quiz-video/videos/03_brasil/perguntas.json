@@ -1,0 +1,92 @@
+{
+  "gancho": {
+    "titulo": "SERÁ QUE VOCÊ CONHECE O BRASIL?",
+    "titulo_emoji": "🤔",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Será que você conhece o Brasil? Você tem 5 segundos!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!",
+    "fala": "Quantas você acertou? Comenta aí! E segue pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Qual é a capital do Brasil?",
+      "alternativas": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Brasília",
+        "Salvador"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Qual é a capital do Brasil?",
+      "fala_resposta": "Brasília!"
+    },
+    {
+      "texto": "Quantas Copas do Mundo o Brasil já ganhou?",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Quantas Copas do Mundo o Brasil já ganhou?",
+      "fala_resposta": "Cinco Copas!"
+    },
+    {
+      "texto": "Quantas estrelas tem a bandeira do Brasil?",
+      "alternativas": [
+        "22",
+        "26",
+        "27",
+        "30"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Quantas estrelas tem a bandeira do Brasil?",
+      "fala_resposta": "Vinte e sete estrelas!"
+    },
+    {
+      "texto": "Em que ano foi a Independência do Brasil?",
+      "alternativas": [
+        "1500",
+        "1808",
+        "1822",
+        "1889"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Em que ano foi a Independência do Brasil?",
+      "fala_resposta": "Em 1822!"
+    },
+    {
+      "texto": "Qual é o maior estado do Brasil?",
+      "alternativas": [
+        "Pará",
+        "Amazonas",
+        "Mato Grosso",
+        "Minas Gerais"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Qual é o maior estado do Brasil?",
+      "fala_resposta": "O Amazonas!"
+    }
+  ]
+}

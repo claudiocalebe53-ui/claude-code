@@ -1,0 +1,30 @@
+00_gancho          0.00-  3.44  esperado: Duvido você acertar as 5! Você tem 5 segundos!
+                                ouvido:   Duvido você acertar a 5, você tem 5 segundos,
+vinheta_facil      3.44-  4.64  esperado: Nível fácil!
+                                ouvido:   nível fácil,
+p1_pergunta        4.64-  6.62  esperado: Qual é o maior animal do planeta?
+                                ouvido:   qual é o maior animal do planeta?
+p1_resposta        6.62-  7.78  esperado: A baleia-azul!
+                                ouvido:   A baleia azul,
+p2_pergunta        7.78-  9.56  esperado: Quantos corações tem um polvo?
+                                ouvido:   quantos corações tem um povo,
+p2_resposta        9.56- 10.77  esperado: Três corações!
+                                ouvido:   3 corações,
+vinheta_medio     10.77- 11.87  esperado: Nível médio!
+                                ouvido:   nível médio,
+p3_pergunta       11.87- 14.27  esperado: Qual é o animal terrestre mais rápido?
+                                ouvido:   qual é o animal terrestre mais rápido,
+p3_resposta       14.27- 15.25  esperado: O guepardo!
+                                ouvido:   o guepardo,
+p4_pergunta       15.25- 17.71  esperado: Qual é o único mamífero que consegue voar?
+                                ouvido:   qual é o único mamífero que consegue voar,
+p4_resposta       17.71- 18.64  esperado: O morcego!
+                                ouvido:   o morcego,
+vinheta_dificil   18.64- 19.97  esperado: Nível difícil!
+                                ouvido:   nível difícil,
+p5_pergunta       19.97- 22.87  esperado: Qual animal dorme até 22 horas por dia?
+                                ouvido:   qual animal dorme até 22h por dia,
+p5_resposta       22.87- 23.77  esperado: O coala!
+                                ouvido:   o koala,
+99_final          23.77- 27.93  esperado: Quantas você acertou? Comenta aí! E segue pra mais quizzes!
+                                ouvido:   quantas você acertou, comenta aí e segue para mais quizzes.

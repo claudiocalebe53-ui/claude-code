@@ -1,0 +1,92 @@
+{
+  "gancho": {
+    "titulo": "SÓ 1% ACERTA AS 5!",
+    "titulo_emoji": "🌍",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Só 1% acerta as 5! Você tem 5 segundos!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!",
+    "fala": "Quantas você acertou? Comenta aí! E segue pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Qual é o maior país do mundo?",
+      "alternativas": [
+        "Canadá",
+        "China",
+        "Rússia",
+        "Brasil"
+      ],
+      "correta": 2,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Qual é o maior país do mundo?",
+      "fala_resposta": "A Rússia!"
+    },
+    {
+      "texto": "Qual é a capital da França?",
+      "alternativas": [
+        "Londres",
+        "Paris",
+        "Roma",
+        "Madri"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Qual é a capital da França?",
+      "fala_resposta": "Paris!"
+    },
+    {
+      "texto": "Qual é a montanha mais alta do mundo?",
+      "alternativas": [
+        "K2",
+        "Everest",
+        "Aconcágua",
+        "Kilimanjaro"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Qual é a montanha mais alta do mundo?",
+      "fala_resposta": "O Monte Everest!"
+    },
+    {
+      "texto": "Qual é o menor país do mundo?",
+      "alternativas": [
+        "Mônaco",
+        "Vaticano",
+        "Malta",
+        "San Marino"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Qual é o menor país do mundo?",
+      "fala_resposta": "O Vaticano!"
+    },
+    {
+      "texto": "Qual é a capital da Austrália?",
+      "alternativas": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "correta": 2,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Qual é a capital da Austrália?",
+      "fala_resposta": "Canberra!"
+    }
+  ]
+}

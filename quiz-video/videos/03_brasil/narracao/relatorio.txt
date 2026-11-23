@@ -1,0 +1,30 @@
+00_gancho          0.00-  3.32  esperado: Será que você conhece o Brasil? Você tem 5 segundos!
+                                ouvido:   Será que você conhece o Brasil? Você tem 5 segundos!
+vinheta_facil      3.32-  4.42  esperado: Nível fácil!
+                                ouvido:   Nível Fácil
+p1_pergunta        4.42-  6.02  esperado: Qual é a capital do Brasil?
+                                ouvido:   Qual é a capital do Brasil?
+p1_resposta        6.02-  6.94  esperado: Brasília!
+                                ouvido:   Brasília
+p2_pergunta        6.94-  9.18  esperado: Quantas Copas do Mundo o Brasil já ganhou?
+                                ouvido:   Quantas copas do mundo o Brasil já ganhou?
+p2_resposta        9.18- 10.42  esperado: Cinco Copas!
+                                ouvido:   5 copas
+vinheta_medio     10.42- 11.49  esperado: Nível médio!
+                                ouvido:   Nível Médio
+p3_pergunta       11.49- 13.85  esperado: Quantas estrelas tem a bandeira do Brasil?
+                                ouvido:   Quantas estrelas tem a bandeira do Brasil?
+p3_resposta       13.85- 15.58  esperado: Vinte e sete estrelas!
+                                ouvido:   27 estrelas
+p4_pergunta       15.58- 17.93  esperado: Em que ano foi a Independência do Brasil?
+                                ouvido:   Em que ano foi a independência do Brasil?
+p4_resposta       17.93- 20.01  esperado: Em 1822!
+                                ouvido:   Em 1822
+vinheta_dificil   20.01- 21.32  esperado: Nível difícil!
+                                ouvido:   Nível Difícil
+p5_pergunta       21.32- 23.44  esperado: Qual é o maior estado do Brasil?
+                                ouvido:   Qual é o maior estado do Brasil?
+p5_resposta       23.44- 24.62  esperado: O Amazonas!
+                                ouvido:   O Amazonas
+99_final          24.62- 28.97  esperado: Quantas você acertou? Comenta aí! E segue pra mais quizzes!
+                                ouvido:   Quantas você acertou? Comenta aí! E segue para mais quizzes!

@@ -25,3 +25,17 @@ python gerar.py            # vídeo completo -> saida/quiz.mp4
   Para outras perguntas, coloque suas imagens lá e aponte no JSON (qualquer proporção; são recortadas para 560x380).
 - Imagem borrada: durante a pergunta aparece a imagem da resposta desfocada, que desembaça na revelação.
   Para usar a imagem da pergunta em vez disso, ponha `"imagem_borrada": false` na pergunta.
+
+## Vários vídeos
+
+Cada vídeo fica em `videos/<nome>/` com `perguntas.json`, `narracao/` e `imagens/`:
+
+```bash
+python cortar_narracao.py --projeto videos/01_animais --audio narracao.mp4 --modelo <modelo faster-whisper>
+python gerar_imagens_lote.py 01_animais     # ilustrações de resposta (emojis Noto + desenhos)
+python gerar.py --projeto videos/01_animais # -> saida/01_animais.mp4
+```
+
+`cortar_narracao.py` transcreve a narração, alinha com as falas do JSON (`gancho.fala`,
+`fala_pergunta`, `fala_resposta`, `final.fala`) e grava `narracao/relatorio.txt` com o que ouviu em cada clipe.
+Emojis: Noto Emoji (Google), Apache 2.0 — ver `assets/emoji/LICENSE`.

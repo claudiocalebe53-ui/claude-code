@@ -1,0 +1,92 @@
+{
+  "gancho": {
+    "titulo": "SÓ GÊNIO ACERTA AS 5!",
+    "titulo_emoji": "🚀",
+    "subtitulo": "5 SEGUNDOS",
+    "subtitulo_emoji": "⏰",
+    "fala": "Só gênio acerta as 5! Você tem 5 segundos!"
+  },
+  "final": {
+    "titulo": "QUANTAS VOCÊ ACERTOU?",
+    "titulo_emoji": "👇",
+    "subtitulo": "Siga para mais quizzes!",
+    "fala": "Quantas você acertou? Comenta aí! E segue pra mais quizzes!"
+  },
+  "perguntas": [
+    {
+      "texto": "Qual é o maior planeta do Sistema Solar?",
+      "alternativas": [
+        "Saturno",
+        "Júpiter",
+        "Netuno",
+        "Terra"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p1_resposta.png",
+      "fala_pergunta": "Qual é o maior planeta do Sistema Solar?",
+      "fala_resposta": "Júpiter!"
+    },
+    {
+      "texto": "Qual planeta é chamado de Planeta Vermelho?",
+      "alternativas": [
+        "Vênus",
+        "Marte",
+        "Júpiter",
+        "Mercúrio"
+      ],
+      "correta": 1,
+      "nivel": "facil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p2_resposta.png",
+      "fala_pergunta": "Qual planeta é chamado de Planeta Vermelho?",
+      "fala_resposta": "Marte!"
+    },
+    {
+      "texto": "Qual é o planeta mais próximo do Sol?",
+      "alternativas": [
+        "Vênus",
+        "Terra",
+        "Mercúrio",
+        "Marte"
+      ],
+      "correta": 2,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p3_resposta.png",
+      "fala_pergunta": "Qual é o planeta mais próximo do Sol?",
+      "fala_resposta": "Mercúrio!"
+    },
+    {
+      "texto": "Quantos planetas tem o Sistema Solar?",
+      "alternativas": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correta": 1,
+      "nivel": "medio",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p4_resposta.png",
+      "fala_pergunta": "Quantos planetas tem o Sistema Solar?",
+      "fala_resposta": "Oito planetas!"
+    },
+    {
+      "texto": "Qual é o planeta mais quente do Sistema Solar?",
+      "alternativas": [
+        "Mercúrio",
+        "Vênus",
+        "Marte",
+        "Júpiter"
+      ],
+      "correta": 1,
+      "nivel": "dificil",
+      "imagem_pergunta": "",
+      "imagem_resposta": "p5_resposta.png",
+      "fala_pergunta": "Qual é o planeta mais quente do Sistema Solar?",
+      "fala_resposta": "Vênus!"
+    }
+  ]
+}
