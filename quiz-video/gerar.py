@@ -297,7 +297,8 @@ def vinheta_escura() -> Image.Image:
     return img
 
 
-def raios(c1, c2, angulo, n=18, centro=(W / 2, H * 0.42)) -> Image.Image:
+def raios(c1, c2, angulo, n=18, centro=None) -> Image.Image:
+    centro = centro or (W / 2, H * 0.42)
     img = Image.new("RGBA", (W, H), c1 + (255,))
     d = ImageDraw.Draw(img)
     r = math.hypot(W, H)
@@ -481,8 +482,40 @@ BTN_W, BTN_H, BTN_GAP = SAFE_R - SAFE_L, 112, 22
 BTN_Y0 = 880
 IMG_W, IMG_H = 560, 380
 IMG_CY = 625
+IMG_CX = CX
+BTN_X0 = SAFE_L
 TOPO_Y = 170
 BAR_Y, BAR_H = 1488, 34
+BAR_X0, BAR_X1 = SAFE_L, SAFE_R
+LOGO_XY = (SAFE_L - 10, 58)
+POS_FINAL = {"titulo": (CX + 20, 520), "emoji": (CX + 20, 800), "balao": (CX + 20, 1050), "siga": (CX + 20, 1320)}
+GANCHO_LARG = 960
+BLUR_MAX = 16
+TAM_TEXTO = 74
+FORMATO = "vertical"
+
+
+def configurar_formato(fmt: str):
+    """'vertical' (1080x1920, Shorts/Reels) ou 'horizontal' (1920x1080, YouTube longo)."""
+    global W, H, CX, SAFE_L, SAFE_R, IMG_W, IMG_H, IMG_CX, IMG_CY, BTN_W, BTN_X0, BTN_Y0, TOPO_Y
+    global BAR_Y, BAR_X0, BAR_X1, LOGO_XY, POS_FINAL, GANCHO_LARG, FORMATO, BLUR_MAX, TAM_TEXTO
+    FORMATO = fmt
+    if fmt != "horizontal":
+        return
+    W, H = 1920, 1080
+    SAFE_L, SAFE_R = 80, 1840
+    CX = W // 2
+    TOPO_Y = 70
+    IMG_W, IMG_H = 640, 434
+    IMG_CX, IMG_CY = 500, 600
+    BTN_X0, BTN_W, BTN_Y0 = 1000, 830, 335
+    BAR_X0, BAR_X1, BAR_Y = 120, 1800, 968
+    LOGO_XY = (W - 84 - 50, 40)
+    POS_FINAL = {"titulo": (W / 2, 250), "emoji": (W / 2 - 230, 580), "balao": (W / 2 + 180, 580),
+                 "siga": (W / 2, 860)}
+    GANCHO_LARG = 1500
+    BLUR_MAX = 26
+    TAM_TEXTO = 90
 LETRAS = "ABCD"
 
 
@@ -534,7 +567,7 @@ class Pergunta:
         # Texto: escolhe tamanho que caiba em até 3 linhas
         self.tx0 = SAFE_L + 160
         largura = W - 60 - self.tx0
-        tam = 74
+        tam = TAM_TEXTO
         while True:
             linhas = quebrar_linhas(q["texto"], tam, largura)
             # prefere 2 linhas (3 linhas encostam na imagem); só aceita 3 se a fonte ficar pequena demais
@@ -563,7 +596,7 @@ class Pergunta:
         # Modo "borrado": mostra a imagem da resposta desfocada e revela desembaçando.
         self.borrar = bool(q.get("imagem_borrada", True)) and pr is not None
         if self.borrar:
-            raios_blur = [16, 12, 8, 5, 3, 1.5]
+            raios_blur = [BLUR_MAX, BLUR_MAX * 0.7, BLUR_MAX * 0.47, BLUR_MAX * 0.3, BLUR_MAX * 0.17, 1.5]
             self.niveis_blur = [moldura(_borrar(img_r, r), -3) for r in raios_blur] + [self.img_r]
 
         alts = q["alternativas"]
@@ -618,7 +651,7 @@ def cor_timer(frac):
 
 def logo_canto(canvas):
     lg = logo(84)
-    colar(canvas, lg, SAFE_L - 10, 58)
+    colar(canvas, lg, *LOGO_XY)
 
 
 def tela_gancho(t, dados, tg):
@@ -648,9 +681,9 @@ def _titulo_gancho(g):
     img = Image.new("RGBA", (w, a.height + b.height - 50), (0, 0, 0, 0))
     img.alpha_composite(a, ((w - a.width) // 2, 0))
     img.alpha_composite(b, ((w - b.width) // 2, a.height - 50))
-    if img.width > 960:  # ganchos longos: reduz para caber com margem
-        esc = 960 / img.width
-        img = img.resize((960, int(img.height * esc)), Image.LANCZOS)
+    if img.width > GANCHO_LARG:  # ganchos longos: reduz para caber com margem
+        esc = GANCHO_LARG / img.width
+        img = img.resize((GANCHO_LARG, int(img.height * esc)), Image.LANCZOS)
     return img
 
 
@@ -741,14 +774,14 @@ def tela_pergunta(t, q, idx, tg):
             k = ease_out_cubic(t_rev / 0.45)
             img = niv[min(len(niv) - 1, int(round(k * (len(niv) - 1))))]
             esc = 1 + 0.08 * math.sin(clamp(t_rev / 0.35) * math.pi)
-        colar_centro(canvas, img, CX, IMG_CY, escala=esc)
+        colar_centro(canvas, img, IMG_CX, IMG_CY, escala=esc)
         if t_rev < 0.15:  # selo "?" sobre a imagem borrada
             sel = _cache_layer("selo_borrado", lambda: texto_layer("?", 170, cor=(255, 205, 0), contorno=12, sombra=10))
             op = 1 - clamp(t_rev / 0.15) if t_rev > 0 else 1
             pul = 1 + 0.06 * math.sin(max(0, t) * 2 * math.pi * 1.2)
-            colar_centro(canvas, sel, CX, IMG_CY, escala=zi * pul, opacidade=op, angulo=8)
+            colar_centro(canvas, sel, IMG_CX, IMG_CY, escala=zi * pul, opacidade=op, angulo=8)
     elif t_rev < 0:
-        colar_centro(canvas, P.img_q, CX, IMG_CY, escala=zi)
+        colar_centro(canvas, P.img_q, IMG_CX, IMG_CY, escala=zi)
     else:
         k = t_rev / 0.24
         if k < 0.5:
@@ -758,7 +791,7 @@ def tela_pergunta(t, q, idx, tg):
         if sx < 0.999:
             nw = max(1, int(img.width * sx))
             img = img.resize((nw, img.height), Image.BILINEAR)
-        colar_centro(canvas, img, CX, IMG_CY)
+        colar_centro(canvas, img, IMG_CX, IMG_CY)
 
     # --- botões em cascata (slide + fade, 0.1s entre eles)
     for i in range(4):
@@ -766,7 +799,7 @@ def tela_pergunta(t, q, idx, tg):
         if ti <= 0:
             continue
         e = ease_out_cubic(ti)
-        x = SAFE_L - 14 - (1 - e) * 220
+        x = BTN_X0 - 14 - (1 - e) * 220
         y = BTN_Y0 + i * (BTN_H + BTN_GAP) - 14
         op = e
         layer = P.botoes[i]
@@ -791,7 +824,7 @@ def tela_pergunta(t, q, idx, tg):
 
 
 def _barra(canvas, frac, op, t_tim):
-    bx0, bx1 = SAFE_L, SAFE_R
+    bx0, bx1 = BAR_X0, BAR_X1
     layer = Image.new("RGBA", (bx1 - bx0 + 20, BAR_H + 26), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     r = BAR_H // 2
@@ -822,25 +855,25 @@ def tela_final(t, dados, tg):
 
     titulo = _cache_layer(("f1", fnl["titulo"]), lambda: _titulo_final(fnl["titulo"]))
     z = ease_out_back(t / 0.35, 2.0)
-    colar_centro(canvas, titulo, CX + 20, 520, escala=z, angulo=-2)
+    colar_centro(canvas, titulo, *POS_FINAL["titulo"], escala=z, angulo=-2)
 
     # emoji 👇 quicando
     e = emoji(fnl.get("titulo_emoji", ""), 150) if fnl.get("titulo_emoji") else None
     bounce = abs(math.sin(t * math.pi * 2.2)) * 40
     ze = ease_out_back((t - 0.25) / 0.3, 2.0)
     if e is not None:
-        colar_centro(canvas, e, CX + 20, 800 + bounce, escala=ze)
+        colar_centro(canvas, e, POS_FINAL["emoji"][0], POS_FINAL["emoji"][1] + bounce, escala=ze)
     else:
-        colar_centro(canvas, _seta(), CX + 20, 800 + bounce, escala=ze)
+        colar_centro(canvas, _seta(), POS_FINAL["emoji"][0], POS_FINAL["emoji"][1] + bounce, escala=ze)
 
     # ícone de comentário pulsando
     bal = _cache_layer("balao", _balao)
     zb = ease_out_back((t - 0.45) / 0.35, 2.0) * (1 + 0.05 * math.sin(max(0, t - 0.8) * 7))
-    colar_centro(canvas, bal, CX + 20, 1050, escala=zb, angulo=4 * math.sin(t * 3))
+    colar_centro(canvas, bal, *POS_FINAL["balao"], escala=zb, angulo=4 * math.sin(t * 3))
 
     siga = _cache_layer(("siga", fnl["subtitulo"]), lambda: _faixa(fnl["subtitulo"], "", VERMELHO, 78))
     zs = ease_out_back((t - 0.8) / 0.35, 2.0)
-    colar_centro(canvas, siga, CX + 20, 1320, escala=zs)
+    colar_centro(canvas, siga, *POS_FINAL["siga"], escala=zs)
     logo_canto(canvas)
     return canvas
 
@@ -957,9 +990,10 @@ _W_SEGS = None
 _W_FPS = 60
 
 
-def _init_worker(dados, segs, fps, projeto=None):
+def _init_worker(dados, segs, fps, projeto=None, formato="vertical"):
     global _W_DADOS, _W_SEGS, _W_FPS, PROJETO
     _W_DADOS, _W_SEGS, _W_FPS, PROJETO = dados, segs, fps, projeto
+    configurar_formato(formato)
 
 
 def render_tempo(tg, dados, segs) -> Image.Image:
@@ -1059,7 +1093,7 @@ def renderizar(dados, saida: Path, fps=60, teste=False, procs=None):
         stdin=subprocess.PIPE)
     t0 = time.time()
     procs = procs or max(1, (os.cpu_count() or 2))
-    with Pool(procs, initializer=_init_worker, initargs=(dados, segs, fps, PROJETO)) as pool:
+    with Pool(procs, initializer=_init_worker, initargs=(dados, segs, fps, PROJETO, FORMATO)) as pool:
         lote = procs * 6  # lotes limitados: evita acumular frames na memória
         feitos = 0
         for ini in range(0, n, lote):
@@ -1104,7 +1138,7 @@ def previa(dados, pasta: Path):
         imgs.append((nome, img))
         print(f"  {pasta / (nome + '.png')}")
     # folha de contato
-    tw, th = 270, 480
+    tw, th = (270, 480) if H > W else (480, 270)
     cols = 4
     rows = math.ceil(len(imgs) / cols)
     folha = Image.new("RGB", (cols * (tw + 20) + 20, rows * (th + 70) + 20), (30, 30, 30))
@@ -1132,6 +1166,8 @@ def main():
     ap.add_argument("--projeto", default=None,
                     help="pasta do vídeo (ex.: videos/01_animais) com perguntas.json, narracao/ e imagens/")
     ap.add_argument("--json", default=None)
+    ap.add_argument("--formato", choices=["vertical", "horizontal"], default=None,
+                    help="padrão: campo 'formato' do JSON, ou vertical")
     ap.add_argument("--saida", default=None)
     ap.add_argument("--fps", type=int, default=60)
     ap.add_argument("--teste", action="store_true", help="vídeo curto: gancho + 1 pergunta + final")
@@ -1148,6 +1184,7 @@ def main():
     json_path = a.json or (PROJETO / "perguntas.json" if PROJETO else BASE / "perguntas.json")
     with open(json_path, encoding="utf-8") as f:
         dados = json.load(f)
+    configurar_formato(a.formato or dados.get("formato", "vertical"))
 
     if a.previa:
         previa(dados, BASE / "saida" / ("previa" if not PROJETO else f"previa_{nome}"))
