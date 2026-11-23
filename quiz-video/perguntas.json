@@ -13,43 +13,68 @@
   "perguntas": [
     {
       "texto": "Quantas patas tem uma aranha?",
-      "alternativas": ["6", "8", "10", "4"],
+      "alternativas": [
+        "6",
+        "8",
+        "10",
+        "4"
+      ],
       "correta": 1,
       "nivel": "facil",
-      "imagem_pergunta": "",
-      "imagem_resposta": ""
+      "imagem_pergunta": "p1_pergunta.png",
+      "imagem_resposta": "p1_resposta.png"
     },
     {
       "texto": "Qual é o maior oceano do mundo?",
-      "alternativas": ["Atlântico", "Índico", "Pacífico", "Ártico"],
+      "alternativas": [
+        "Atlântico",
+        "Índico",
+        "Pacífico",
+        "Ártico"
+      ],
       "correta": 2,
       "nivel": "facil",
-      "imagem_pergunta": "",
-      "imagem_resposta": ""
+      "imagem_pergunta": "p2_pergunta.png",
+      "imagem_resposta": "p2_resposta.png"
     },
     {
       "texto": "Em que ano Cabral chegou ao Brasil?",
-      "alternativas": ["1492", "1500", "1530", "1822"],
+      "alternativas": [
+        "1492",
+        "1500",
+        "1530",
+        "1822"
+      ],
       "correta": 1,
       "nivel": "medio",
-      "imagem_pergunta": "",
-      "imagem_resposta": ""
+      "imagem_pergunta": "p3_pergunta.png",
+      "imagem_resposta": "p3_resposta.png"
     },
     {
       "texto": "Qual é o símbolo químico do ouro?",
-      "alternativas": ["Ag", "Au", "Fe", "Ou"],
+      "alternativas": [
+        "Ag",
+        "Au",
+        "Fe",
+        "Ou"
+      ],
       "correta": 1,
       "nivel": "medio",
-      "imagem_pergunta": "",
-      "imagem_resposta": ""
+      "imagem_pergunta": "p4_pergunta.png",
+      "imagem_resposta": "p4_resposta.png"
     },
     {
       "texto": "Qual é o maior osso do corpo humano?",
-      "alternativas": ["Úmero", "Tíbia", "Fêmur", "Rádio"],
+      "alternativas": [
+        "Úmero",
+        "Tíbia",
+        "Fêmur",
+        "Rádio"
+      ],
       "correta": 2,
       "nivel": "dificil",
-      "imagem_pergunta": "",
-      "imagem_resposta": ""
+      "imagem_pergunta": "p5_pergunta.png",
+      "imagem_resposta": "p5_resposta.png"
     }
   ]
 }

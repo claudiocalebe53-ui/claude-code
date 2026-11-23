@@ -21,3 +21,5 @@ python gerar.py            # vídeo completo -> saida/quiz.mp4
   `vinheta_medio`, `vinheta_dificil`, `p1_pergunta`, `p1_resposta` … `p5_resposta`, `99_final`.
   A pergunta é lida no início do cronômetro e a resposta entra junto com a revelação.
   Telas se alongam automaticamente se a fala for mais longa que o tempo padrão.
+- `assets/imagens/`: as ilustrações das 5 perguntas iniciais foram desenhadas por `python gerar_imagens.py`.
+  Para outras perguntas, coloque suas imagens lá e aponte no JSON (qualquer proporção; são recortadas para 560x380).
